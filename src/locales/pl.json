@@ -1,0 +1,14 @@
+{
+    "nav": {
+        "home": "Strona główna",
+        "accountingBox": "Pudełko Księgowe",
+        "accountingServer": "Serwer Księgowy",
+        "itSupport": "Pomoc IT",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Nowoczesne rozwiązania IT dla Twojego biznesu",
+        "subtitle": "Niezawodne serwery, bezpieczne kopie zapasowe i profesjonalne wsparcie."
+    }
+}

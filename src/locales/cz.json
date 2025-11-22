@@ -1,0 +1,213 @@
+{
+    "nav": {
+        "home": "Domů",
+        "accountingBox": "Účetní Box",
+        "accountingServer": "Účetní Server",
+        "itSupport": "IT Pomocník",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Moderní IT řešení pro vaše podnikání",
+        "subtitle": "Spolehlivé servery, bezpečné zálohy a profesionální podpora. Vše, co potřebujete pro bezstarostný chod vaší firmy.",
+        "cta": "Zjistit více"
+    },
+    "features": {
+        "title": "Proč si vybrat nás?",
+        "server": {
+            "title": "Účetní Server",
+            "desc": "Výkonné cloudové řešení pro vaše účetnictví. Přístup odkudkoliv, maximální bezpečnost."
+        },
+        "backup": {
+            "title": "Účetní Box",
+            "desc": "Automatické zálohování vašich dat. Už nikdy o nic nepřijdete."
+        },
+        "support": {
+            "title": "IT Pomocník",
+            "desc": "Profesionální IT podpora vždy po ruce. Řešíme problémy rychle a efektivně."
+        }
+    },
+    "accountingBox": {
+        "title": "Účetní Box",
+        "subtitle": "Bezpečné cloudové úložiště pro vaše data",
+        "desc": "Ukládejte, sdílejte a zálohujte své dokumenty bezpečně v cloudu. Přístup odkudkoliv a kdykoliv.",
+        "features": {
+            "security": {
+                "title": "Maximální bezpečnost",
+                "desc": "Šifrovaný přenos a ukládání dat."
+            },
+            "backup": {
+                "title": "Automatické zálohy",
+                "desc": "Pravidelné zálohování, abyste o nic nepřišli."
+            },
+            "access": {
+                "title": "Přístup 24/7",
+                "desc": "Vaše data jsou dostupná kdykoliv je potřebujete."
+            }
+        },
+        "pricing": {
+            "mini": {
+                "name": "Mini",
+                "price": "190 Kč",
+                "features": [
+                    "5 GB prostoru",
+                    "1 uživatel",
+                    "Základní podpora"
+                ]
+            },
+            "team": {
+                "name": "Team",
+                "price": "490 Kč",
+                "features": [
+                    "50 GB prostoru",
+                    "5 uživatelů",
+                    "Prioritní podpora"
+                ]
+            },
+            "profi": {
+                "name": "Profi",
+                "price": "990 Kč",
+                "features": [
+                    "Neomezený prostor",
+                    "Neomezeně uživatelů",
+                    "VIP podpora"
+                ]
+            }
+        }
+    },
+    "accountingServer": {
+        "title": "Účetní Server",
+        "subtitle": "Váš vlastní server pro účetnictví v cloudu",
+        "desc": "Provozujte Pohodu, Money S3 a další účetní systémy online. Bez starostí o hardware.",
+        "features": {
+            "performance": {
+                "title": "Vysoký výkon",
+                "desc": "SSD disky a výkonné procesory pro rychlý chod."
+            },
+            "remote": {
+                "title": "Vzdálená plocha",
+                "desc": "Pracujte z domova nebo na cestách stejně jako v kanceláři."
+            },
+            "updates": {
+                "title": "Správa aktualizací",
+                "desc": "O aktualizace systému se postaráme my."
+            }
+        },
+        "pricing": {
+            "solo": {
+                "name": "Solo",
+                "price": "590 Kč",
+                "features": [
+                    "1 uživatel",
+                    "20 GB SSD",
+                    "Zálohování"
+                ]
+            },
+            "team3": {
+                "name": "Team 3",
+                "price": "1490 Kč",
+                "features": [
+                    "3 uživatelé",
+                    "50 GB SSD",
+                    "Zálohování + Antivir"
+                ]
+            },
+            "office5": {
+                "name": "Office 5",
+                "price": "2490 Kč",
+                "features": [
+                    "5 uživatelů",
+                    "100 GB SSD",
+                    "Kompletní správa"
+                ]
+            }
+        }
+    },
+    "itSupport": {
+        "title": "IT Pomocník",
+        "subtitle": "Vaše externí IT oddělení",
+        "desc": "Nechte starosti s IT na nás. Nabízíme komplexní správu počítačů, sítí a serverů.",
+        "features": {
+            "helpdesk": {
+                "title": "Helpdesk",
+                "desc": "Rychlá pomoc na telefonu nebo přes vzdálenou správu."
+            },
+            "monitoring": {
+                "title": "Monitoring",
+                "desc": "Neustálý dohled nad vaší infrastrukturou."
+            },
+            "consulting": {
+                "title": "Konzultace",
+                "desc": "Poradíme s výběrem hardwaru i softwaru."
+            }
+        },
+        "pricing": {
+            "basic": {
+                "name": "Základ",
+                "price": "990 Kč",
+                "features": [
+                    "Reakce do 24h",
+                    "Vzdálená správa",
+                    "1h práce v ceně"
+                ]
+            },
+            "standard": {
+                "name": "Standard",
+                "price": "2990 Kč",
+                "features": [
+                    "Reakce do 4h",
+                    "Vzdálená správa + výjezdy",
+                    "5h práce v ceně"
+                ]
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "Individuálně",
+                "features": [
+                    "Reakce ihned",
+                    "Neomezená podpora",
+                    "Dedikovaný technik"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "title": "Projekty na míru",
+        "subtitle": "Weby, e-shopy a sítě",
+        "desc": "Vytvoříme pro vás moderní web, e-shop nebo navrhneme a zrealizujeme firemní síť.",
+        "features": {
+            "web": {
+                "title": "Weby a E-shopy",
+                "desc": "Moderní, rychlé a responzivní weby na míru."
+            },
+            "network": {
+                "title": "Sítě a Wi-Fi",
+                "desc": "Návrh a realizace stabilních firemních sítí."
+            },
+            "cameras": {
+                "title": "Kamerové systémy",
+                "desc": "Zabezpečení vašich prostor kamerovým systémem."
+            }
+        }
+    },
+    "contact": {
+        "title": "Kontaktujte nás",
+        "subtitle": "Jsme tu pro vás",
+        "desc": "Máte dotaz nebo potřebujete poradit? Neváhejte se na nás obrátit.",
+        "form": {
+            "name": "Jméno",
+            "email": "E-mail",
+            "message": "Zpráva",
+            "submit": "Odeslat"
+        },
+        "info": {
+            "address": "Adresa",
+            "phone": "Telefon",
+            "email": "E-mail"
+        }
+    },
+    "cta": {
+        "title": "Připraveni posunout vaše IT na novou úroveň?",
+        "button": "Kontaktujte nás"
+    }
+}

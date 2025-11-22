@@ -1,0 +1,14 @@
+{
+    "nav": {
+        "home": "Home",
+        "accountingBox": "Accounting Box",
+        "accountingServer": "Accounting Server",
+        "itSupport": "IT Support",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Modern IT Solutions for Your Business",
+        "subtitle": "Reliable servers, secure backups, and professional support."
+    }
+}

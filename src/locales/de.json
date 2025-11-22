@@ -1,0 +1,14 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "accountingBox": "Buchhaltungs-Box",
+        "accountingServer": "Buchhaltungs-Server",
+        "itSupport": "IT-Assistent",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Moderne IT-Lösungen für Ihr Unternehmen",
+        "subtitle": "Zuverlässige Server, sichere Backups und professioneller Support."
+    }
+}
