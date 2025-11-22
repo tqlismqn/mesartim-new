@@ -1,113 +1,100 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle';
-import { LanguageSwitcher } from './LanguageSwitcher';
-import { cn } from '../UI/Button';
+import { Button } from '../UI/Button';
+import { motion, AnimatePresence } from 'framer-motion';
+import { clsx } from 'clsx';
 
-export function Navbar() {
-    const { t } = useTranslation();
+export const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            setScrolled(window.scrollY > 20);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const navLinks = [
-        { path: '/', label: t('nav.home') },
-        { path: '/accounting-box', label: t('nav.accountingBox') },
-        { path: '/accounting-server', label: t('nav.accountingServer') },
-        { path: '/it-support', label: t('nav.itSupport') },
-        { path: '/projects', label: t('nav.projects') },
-        { path: '/contact', label: t('nav.contact') },
+        { name: 'Home', path: '/' },
+        { name: 'Services', path: '/accounting-server' },
+        { name: 'Projects', path: '/projects' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     return (
         <nav
-            className={cn(
-                'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-                isScrolled ? 'glass shadow-sm py-2' : 'bg-transparent py-4'
+            className={clsx(
+                'fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent',
+                scrolled ? 'glass-nav py-4' : 'bg-transparent py-6'
             )}
         >
-            <div className="container mx-auto px-4 flex items-center justify-between">
-                <Link to="/" className="text-2xl font-bold text-primary dark:text-white">
-                    Mesartim
+            <div className="container mx-auto px-4 flex justify-between items-center">
+                <Link to="/" className="text-2xl font-semibold tracking-tight text-gray-900">
+                    mesartim<span className="text-primary">.cz</span>
                 </Link>
 
-                {/* Desktop Menu */}
+                {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-8">
-                    <div className="flex gap-6">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.path}
-                                to={link.path}
-                                className={cn(
-                                    'text-sm font-medium transition-colors hover:text-primary dark:hover:text-blue-400',
-                                    location.pathname === link.path
-                                        ? 'text-primary dark:text-blue-400'
-                                        : 'text-gray-600 dark:text-gray-300'
-                                )}
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
-                    </div>
-                    <div className="flex items-center gap-4 pl-6 border-l border-gray-200 dark:border-gray-700">
-                        <ThemeToggle />
-                        <LanguageSwitcher />
-                    </div>
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.path}
+                            to={link.path}
+                            className={clsx(
+                                'text-sm font-medium transition-colors hover:text-primary',
+                                location.pathname === link.path ? 'text-primary' : 'text-gray-500'
+                            )}
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                    <Link to="/contact">
+                        <Button size="sm" className="rounded-full px-6 bg-gray-900 text-white hover:bg-gray-800">Get Started</Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden p-2 text-gray-600 dark:text-gray-300"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    className="md:hidden p-2 text-gray-600"
+                    onClick={() => setIsOpen(!isOpen)}
                 >
-                    {isMobileMenuOpen ? <X /> : <Menu />}
+                    {isOpen ? <X /> : <Menu />}
                 </button>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Nav */}
             <AnimatePresence>
-                {isMobileMenuOpen && (
+                {isOpen && (
                     <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden glass border-t border-gray-200 dark:border-gray-700"
+                        className="md:hidden bg-white/95 backdrop-blur-xl border-b border-gray-200 overflow-hidden"
                     >
                         <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.path}
                                     to={link.path}
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className={cn(
-                                        'text-base font-medium py-2',
-                                        location.pathname === link.path
-                                            ? 'text-primary dark:text-blue-400'
-                                            : 'text-gray-600 dark:text-gray-300'
+                                    onClick={() => setIsOpen(false)}
+                                    className={clsx(
+                                        'text-lg font-medium py-2',
+                                        location.pathname === link.path ? 'text-primary' : 'text-gray-600'
                                     )}
                                 >
-                                    {link.label}
+                                    {link.name}
                                 </Link>
                             ))}
-                            <div className="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                                <ThemeToggle />
-                                <LanguageSwitcher />
-                            </div>
+                            <Link to="/contact" onClick={() => setIsOpen(false)}>
+                                <Button className="w-full justify-center rounded-full">Get Started</Button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}
             </AnimatePresence>
         </nav>
     );
-}
+};
