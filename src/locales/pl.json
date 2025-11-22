@@ -9,6 +9,205 @@
     },
     "hero": {
         "title": "Nowoczesne rozwiązania IT dla Twojego biznesu",
-        "subtitle": "Niezawodne serwery, bezpieczne kopie zapasowe i profesjonalne wsparcie."
+        "subtitle": "Niezawodne serwery, bezpieczne kopie zapasowe i profesjonalne wsparcie. Wszystko, czego potrzebujesz do bezproblemowego działania firmy.",
+        "cta": "Dowiedz się więcej"
+    },
+    "features": {
+        "title": "Dlaczego my?",
+        "server": {
+            "title": "Serwer Księgowy",
+            "desc": "Potężne rozwiązanie chmurowe dla Twojej księgowości. Dostęp z każdego miejsca, maksymalne bezpieczeństwo."
+        },
+        "backup": {
+            "title": "Pudełko Księgowe",
+            "desc": "Automatyczne tworzenie kopii zapasowych danych. Już nigdy nic nie stracisz."
+        },
+        "support": {
+            "title": "Pomoc IT",
+            "desc": "Profesjonalne wsparcie IT zawsze pod ręką. Rozwiązujemy problemy szybko i skutecznie."
+        }
+    },
+    "accountingBox": {
+        "title": "Pudełko Księgowe",
+        "subtitle": "Bezpieczna chmura dla Twoich danych",
+        "desc": "Przechowuj, udostępniaj i twórz kopie zapasowe dokumentów bezpiecznie w chmurze. Dostęp w dowolnym miejscu i czasie.",
+        "features": {
+            "security": {
+                "title": "Maksymalne bezpieczeństwo",
+                "desc": "Szyfrowany transfer i przechowywanie danych."
+            },
+            "backup": {
+                "title": "Automatyczne kopie",
+                "desc": "Regularne kopie zapasowe, abyś nic nie stracił."
+            },
+            "access": {
+                "title": "Dostęp 24/7",
+                "desc": "Twoje dane są dostępne zawsze, gdy ich potrzebujesz."
+            }
+        },
+        "pricing": {
+            "mini": {
+                "name": "Mini",
+                "price": "190 Kč",
+                "features": [
+                    "5 GB miejsca",
+                    "1 użytkownik",
+                    "Podstawowe wsparcie"
+                ]
+            },
+            "team": {
+                "name": "Team",
+                "price": "490 Kč",
+                "features": [
+                    "50 GB miejsca",
+                    "5 użytkowników",
+                    "Priorytetowe wsparcie"
+                ]
+            },
+            "profi": {
+                "name": "Profi",
+                "price": "990 Kč",
+                "features": [
+                    "Nielimitowane miejsce",
+                    "Nielimitowani użytkownicy",
+                    "Wsparcie VIP"
+                ]
+            }
+        }
+    },
+    "accountingServer": {
+        "title": "Serwer Księgowy",
+        "subtitle": "Twój własny serwer księgowy w chmurze",
+        "desc": "Uruchom Pohoda, Money S3 i inne systemy księgowe online. Bez martwienia się o sprzęt.",
+        "features": {
+            "performance": {
+                "title": "Wysoka wydajność",
+                "desc": "Dyski SSD i wydajne procesory."
+            },
+            "remote": {
+                "title": "Pulpit zdalny",
+                "desc": "Pracuj z domu lub w podróży tak jak w biurze."
+            },
+            "updates": {
+                "title": "Zarządzanie aktualizacjami",
+                "desc": "Zadbamy o aktualizacje systemu."
+            }
+        },
+        "pricing": {
+            "solo": {
+                "name": "Solo",
+                "price": "590 Kč",
+                "features": [
+                    "1 użytkownik",
+                    "20 GB SSD",
+                    "Kopia zapasowa"
+                ]
+            },
+            "team3": {
+                "name": "Team 3",
+                "price": "1490 Kč",
+                "features": [
+                    "3 użytkowników",
+                    "50 GB SSD",
+                    "Kopia + Antywirus"
+                ]
+            },
+            "office5": {
+                "name": "Office 5",
+                "price": "2490 Kč",
+                "features": [
+                    "5 użytkowników",
+                    "100 GB SSD",
+                    "Pełne zarządzanie"
+                ]
+            }
+        }
+    },
+    "itSupport": {
+        "title": "Pomoc IT",
+        "subtitle": "Twój zewnętrzny dział IT",
+        "desc": "Zostaw problemy IT nam. Oferujemy kompleksowe zarządzanie komputerami, sieciami i serwerami.",
+        "features": {
+            "helpdesk": {
+                "title": "Helpdesk",
+                "desc": "Szybka pomoc telefoniczna lub zdalna."
+            },
+            "monitoring": {
+                "title": "Monitoring",
+                "desc": "Stały nadzór nad Twoją infrastrukturą."
+            },
+            "consulting": {
+                "title": "Doradztwo",
+                "desc": "Doradzimy w wyborze sprzętu i oprogramowania."
+            }
+        },
+        "pricing": {
+            "basic": {
+                "name": "Podstawowy",
+                "price": "990 Kč",
+                "features": [
+                    "Reakcja do 24h",
+                    "Zdalne zarządzanie",
+                    "1h pracy w cenie"
+                ]
+            },
+            "standard": {
+                "name": "Standard",
+                "price": "2990 Kč",
+                "features": [
+                    "Reakcja do 4h",
+                    "Zdalnie + Na miejscu",
+                    "5h pracy w cenie"
+                ]
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "Indywidualnie",
+                "features": [
+                    "Reakcja natychmiastowa",
+                    "Nielimitowane wsparcie",
+                    "Dedykowany technik"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "title": "Projekty na miarę",
+        "subtitle": "Strony www, sklepy i sieci",
+        "desc": "Stworzymy dla Ciebie nowoczesną stronę, sklep internetowy lub zaprojektujemy i wdrożymy sieć firmową.",
+        "features": {
+            "web": {
+                "title": "Strony i E-sklepy",
+                "desc": "Nowoczesne, szybkie i responsywne strony."
+            },
+            "network": {
+                "title": "Sieci i Wi-Fi",
+                "desc": "Projektowanie i wdrażanie stabilnych sieci."
+            },
+            "cameras": {
+                "title": "Systemy kamer",
+                "desc": "Zabezpieczenie Twoich pomieszczeń."
+            }
+        }
+    },
+    "contact": {
+        "title": "Skontaktuj się z nami",
+        "subtitle": "Jesteśmy tu dla Ciebie",
+        "desc": "Masz pytanie lub potrzebujesz porady? Nie wahaj się z nami skontaktować.",
+        "form": {
+            "name": "Imię",
+            "email": "E-mail",
+            "message": "Wiadomość",
+            "submit": "Wyślij"
+        },
+        "info": {
+            "address": "Adres",
+            "phone": "Telefon",
+            "email": "E-mail"
+        }
+    },
+    "cta": {
+        "title": "Gotowy, aby przenieść swoje IT na wyższy poziom?",
+        "button": "Skontaktuj się z nami"
     }
 }

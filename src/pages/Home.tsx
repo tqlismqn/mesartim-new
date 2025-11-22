@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Server, Shield, Headphones, ArrowRight } from 'lucide-react';
+import { ArrowRight, Server, Database, Headphones } from 'lucide-react';
 import { Button } from '../components/UI/Button';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ export default function Home() {
             link: '/accounting-server'
         },
         {
-            icon: <Shield className="w-8 h-8 text-primary dark:text-blue-400" />,
+            icon: <Database className="w-8 h-8 text-primary dark:text-blue-400" />,
             title: t('features.backup.title'),
             desc: t('features.backup.desc'),
             link: '/accounting-box'
@@ -29,79 +29,72 @@ export default function Home() {
     ];
 
     return (
-        <div className="overflow-hidden">
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-                <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent dark:from-blue-900/20"></div>
-
-                <div className="container mx-auto px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+            <section className="relative bg-gradient-to-r from-blue-600 to-purple-600 py-20 md:py-32 text-white overflow-hidden">
+                <div className="absolute inset-0 z-0 opacity-20">
+                    <img src="/hero-bg.png" alt="Background" className="w-full h-full object-cover" />
+                </div>
+                <div className="container mx-auto px-4 text-center relative z-10">
+                    <motion.h1
+                        initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="text-center max-w-4xl mx-auto"
+                        transition={{ duration: 0.8 }}
+                        className="text-4xl md:text-6xl font-extrabold leading-tight mb-6"
                     >
-                        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-8 tracking-tight leading-tight">
-                            {t('hero.title')}
-                        </h1>
-                        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
-                            {t('hero.subtitle')}
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link to="/contact">
-                                <Button size="lg" className="w-full sm:w-auto">
-                                    {t('cta.button')} <ArrowRight className="ml-2 w-5 h-5 inline" />
-                                </Button>
-                            </Link>
-                            <Link to="/accounting-server">
-                                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                                    {t('hero.cta')}
-                                </Button>
-                            </Link>
-                        </div>
+                        {t('hero.title')}
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
+                    >
+                        {t('hero.subtitle')}
+                    </motion.p>
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="flex flex-col sm:flex-row gap-4 justify-center"
+                    >
+                        <Link to="/contact">
+                            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 border-none text-lg px-8 py-4">
+                                {t('hero.cta')} <ArrowRight className="ml-2 w-5 h-5" />
+                            </Button>
+                        </Link>
+                        <Link to="/accounting-server">
+                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4">
+                                View Services
+                            </Button>
+                        </Link>
                     </motion.div>
                 </div>
             </section>
 
             {/* Features Section */}
-            <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
+            <section className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800">
                 <div className="container mx-auto px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="text-center mb-16"
-                    >
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                            {t('features.title')}
-                        </h2>
-                    </motion.div>
-
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                        {t('features.title')}
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {features.map((feature, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="glass-card p-8 hover:shadow-xl transition-shadow duration-300"
+                                transition={{ duration: 0.6, delay: index * 0.1 }}
+                                className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all"
                             >
-                                <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-2xl inline-block">
+                                <div className="mb-6 flex justify-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-2xl inline-block">
                                     {feature.icon}
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                                    {feature.title}
-                                </h3>
-                                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                    {feature.desc}
-                                </p>
-                                <Link
-                                    to={feature.link}
-                                    className="text-primary dark:text-blue-400 font-medium hover:underline inline-flex items-center"
-                                >
-                                    {t('hero.cta')} <ArrowRight className="ml-1 w-4 h-4" />
+                                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{feature.title}</h3>
+                                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{feature.desc}</p>
+                                <Link to={feature.link} className="text-primary dark:text-blue-400 font-semibold hover:underline flex items-center justify-center">
+                                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
                                 </Link>
                             </motion.div>
                         ))}
@@ -110,27 +103,21 @@ export default function Home() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20">
-                <div className="container mx-auto px-4">
+            <section className="relative bg-gradient-to-r from-green-500 to-teal-500 py-20 md:py-28 text-white overflow-hidden">
+                <div className="container mx-auto px-4 text-center">
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="bg-primary dark:bg-blue-900 rounded-3xl p-12 md:p-20 text-center relative overflow-hidden"
+                        transition={{ duration: 0.8 }}
                     >
-                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
-
                         <div className="relative z-10 max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
                                 {t('cta.title')}
                             </h2>
                             <Link to="/contact">
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-primary hover:bg-gray-100 border-none"
-                                >
-                                    {t('cta.button')}
+                                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 border-none text-lg px-8 py-4">
+                                    {t('cta.button')} <ArrowRight className="ml-2 w-5 h-5" />
                                 </Button>
                             </Link>
                         </div>

@@ -9,6 +9,205 @@
     },
     "hero": {
         "title": "Modern IT Solutions for Your Business",
-        "subtitle": "Reliable servers, secure backups, and professional support."
+        "subtitle": "Reliable servers, secure backups, and professional support. Everything you need for worry-free business operations.",
+        "cta": "Learn More"
+    },
+    "features": {
+        "title": "Why Choose Us?",
+        "server": {
+            "title": "Accounting Server",
+            "desc": "Powerful cloud solution for your accounting. Access from anywhere, maximum security."
+        },
+        "backup": {
+            "title": "Accounting Box",
+            "desc": "Automatic backup of your data. Never lose anything again."
+        },
+        "support": {
+            "title": "IT Support",
+            "desc": "Professional IT support always at hand. We solve problems quickly and efficiently."
+        }
+    },
+    "accountingBox": {
+        "title": "Accounting Box",
+        "subtitle": "Secure Cloud Storage for Your Data",
+        "desc": "Store, share, and backup your documents securely in the cloud. Access from anywhere, anytime.",
+        "features": {
+            "security": {
+                "title": "Maximum Security",
+                "desc": "Encrypted data transfer and storage."
+            },
+            "backup": {
+                "title": "Automatic Backups",
+                "desc": "Regular backups so you never lose anything."
+            },
+            "access": {
+                "title": "24/7 Access",
+                "desc": "Your data is available whenever you need it."
+            }
+        },
+        "pricing": {
+            "mini": {
+                "name": "Mini",
+                "price": "190 CZK",
+                "features": [
+                    "5 GB space",
+                    "1 user",
+                    "Basic support"
+                ]
+            },
+            "team": {
+                "name": "Team",
+                "price": "490 CZK",
+                "features": [
+                    "50 GB space",
+                    "5 users",
+                    "Priority support"
+                ]
+            },
+            "profi": {
+                "name": "Profi",
+                "price": "990 CZK",
+                "features": [
+                    "Unlimited space",
+                    "Unlimited users",
+                    "VIP support"
+                ]
+            }
+        }
+    },
+    "accountingServer": {
+        "title": "Accounting Server",
+        "subtitle": "Your Own Cloud Accounting Server",
+        "desc": "Run Pohoda, Money S3, and other accounting systems online. No hardware worries.",
+        "features": {
+            "performance": {
+                "title": "High Performance",
+                "desc": "SSD drives and powerful processors for fast operation."
+            },
+            "remote": {
+                "title": "Remote Desktop",
+                "desc": "Work from home or on the go just like in the office."
+            },
+            "updates": {
+                "title": "Update Management",
+                "desc": "We take care of system updates."
+            }
+        },
+        "pricing": {
+            "solo": {
+                "name": "Solo",
+                "price": "590 CZK",
+                "features": [
+                    "1 user",
+                    "20 GB SSD",
+                    "Backup"
+                ]
+            },
+            "team3": {
+                "name": "Team 3",
+                "price": "1490 CZK",
+                "features": [
+                    "3 users",
+                    "50 GB SSD",
+                    "Backup + Antivirus"
+                ]
+            },
+            "office5": {
+                "name": "Office 5",
+                "price": "2490 CZK",
+                "features": [
+                    "5 users",
+                    "100 GB SSD",
+                    "Complete management"
+                ]
+            }
+        }
+    },
+    "itSupport": {
+        "title": "IT Support",
+        "subtitle": "Your External IT Department",
+        "desc": "Leave IT worries to us. We offer comprehensive management of computers, networks, and servers.",
+        "features": {
+            "helpdesk": {
+                "title": "Helpdesk",
+                "desc": "Quick help via phone or remote management."
+            },
+            "monitoring": {
+                "title": "Monitoring",
+                "desc": "Constant monitoring of your infrastructure."
+            },
+            "consulting": {
+                "title": "Consulting",
+                "desc": "We advise on hardware and software selection."
+            }
+        },
+        "pricing": {
+            "basic": {
+                "name": "Basic",
+                "price": "990 CZK",
+                "features": [
+                    "Response within 24h",
+                    "Remote management",
+                    "1h work included"
+                ]
+            },
+            "standard": {
+                "name": "Standard",
+                "price": "2990 CZK",
+                "features": [
+                    "Response within 4h",
+                    "Remote + On-site",
+                    "5h work included"
+                ]
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "Custom",
+                "features": [
+                    "Immediate response",
+                    "Unlimited support",
+                    "Dedicated technician"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "title": "Custom Projects",
+        "subtitle": "Websites, E-shops, and Networks",
+        "desc": "We will create a modern website, e-shop, or design and implement a corporate network for you.",
+        "features": {
+            "web": {
+                "title": "Websites & E-shops",
+                "desc": "Modern, fast, and responsive custom websites."
+            },
+            "network": {
+                "title": "Networks & Wi-Fi",
+                "desc": "Design and implementation of stable corporate networks."
+            },
+            "cameras": {
+                "title": "Camera Systems",
+                "desc": "Securing your premises with a camera system."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We Are Here For You",
+        "desc": "Have a question or need advice? Do not hesitate to contact us.",
+        "form": {
+            "name": "Name",
+            "email": "E-mail",
+            "message": "Message",
+            "submit": "Send"
+        },
+        "info": {
+            "address": "Address",
+            "phone": "Phone",
+            "email": "E-mail"
+        }
+    },
+    "cta": {
+        "title": "Ready to take your IT to the next level?",
+        "button": "Contact Us"
     }
 }

@@ -9,6 +9,205 @@
     },
     "hero": {
         "title": "Moderne IT-Lösungen für Ihr Unternehmen",
-        "subtitle": "Zuverlässige Server, sichere Backups und professioneller Support."
+        "subtitle": "Zuverlässige Server, sichere Backups und professioneller Support. Alles, was Sie für einen sorgenfreien Geschäftsbetrieb benötigen.",
+        "cta": "Mehr erfahren"
+    },
+    "features": {
+        "title": "Warum uns wählen?",
+        "server": {
+            "title": "Buchhaltungs-Server",
+            "desc": "Leistungsstarke Cloud-Lösung für Ihre Buchhaltung. Zugriff von überall, maximale Sicherheit."
+        },
+        "backup": {
+            "title": "Buchhaltungs-Box",
+            "desc": "Automatische Sicherung Ihrer Daten. Verlieren Sie nie wieder etwas."
+        },
+        "support": {
+            "title": "IT-Assistent",
+            "desc": "Professioneller IT-Support immer zur Hand. Wir lösen Probleme schnell und effizient."
+        }
+    },
+    "accountingBox": {
+        "title": "Buchhaltungs-Box",
+        "subtitle": "Sicherer Cloud-Speicher für Ihre Daten",
+        "desc": "Speichern, teilen und sichern Sie Ihre Dokumente sicher in der Cloud. Zugriff jederzeit und überall.",
+        "features": {
+            "security": {
+                "title": "Maximale Sicherheit",
+                "desc": "Verschlüsselte Datenübertragung und -speicherung."
+            },
+            "backup": {
+                "title": "Automatische Backups",
+                "desc": "Regelmäßige Backups, damit Sie nichts verlieren."
+            },
+            "access": {
+                "title": "24/7 Zugriff",
+                "desc": "Ihre Daten sind immer verfügbar, wenn Sie sie brauchen."
+            }
+        },
+        "pricing": {
+            "mini": {
+                "name": "Mini",
+                "price": "190 Kč",
+                "features": [
+                    "5 GB Speicher",
+                    "1 Benutzer",
+                    "Basis-Support"
+                ]
+            },
+            "team": {
+                "name": "Team",
+                "price": "490 Kč",
+                "features": [
+                    "50 GB Speicher",
+                    "5 Benutzer",
+                    "Prioritäts-Support"
+                ]
+            },
+            "profi": {
+                "name": "Profi",
+                "price": "990 Kč",
+                "features": [
+                    "Unbegrenzter Speicher",
+                    "Unbegrenzte Benutzer",
+                    "VIP-Support"
+                ]
+            }
+        }
+    },
+    "accountingServer": {
+        "title": "Buchhaltungs-Server",
+        "subtitle": "Ihr eigener Cloud-Server für die Buchhaltung",
+        "desc": "Betreiben Sie Pohoda, Money S3 und andere Buchhaltungssysteme online. Keine Sorgen um Hardware.",
+        "features": {
+            "performance": {
+                "title": "Hohe Leistung",
+                "desc": "SSD-Laufwerke und leistungsstarke Prozessoren."
+            },
+            "remote": {
+                "title": "Remote Desktop",
+                "desc": "Arbeiten Sie von zu Hause oder unterwegs wie im Büro."
+            },
+            "updates": {
+                "title": "Update-Management",
+                "desc": "Wir kümmern uns um System-Updates."
+            }
+        },
+        "pricing": {
+            "solo": {
+                "name": "Solo",
+                "price": "590 Kč",
+                "features": [
+                    "1 Benutzer",
+                    "20 GB SSD",
+                    "Backup"
+                ]
+            },
+            "team3": {
+                "name": "Team 3",
+                "price": "1490 Kč",
+                "features": [
+                    "3 Benutzer",
+                    "50 GB SSD",
+                    "Backup + Antivirus"
+                ]
+            },
+            "office5": {
+                "name": "Office 5",
+                "price": "2490 Kč",
+                "features": [
+                    "5 Benutzer",
+                    "100 GB SSD",
+                    "Komplettes Management"
+                ]
+            }
+        }
+    },
+    "itSupport": {
+        "title": "IT-Assistent",
+        "subtitle": "Ihre externe IT-Abteilung",
+        "desc": "Überlassen Sie uns die IT-Sorgen. Wir bieten umfassendes Management von Computern, Netzwerken und Servern.",
+        "features": {
+            "helpdesk": {
+                "title": "Helpdesk",
+                "desc": "Schnelle Hilfe per Telefon oder Fernwartung."
+            },
+            "monitoring": {
+                "title": "Monitoring",
+                "desc": "Ständige Überwachung Ihrer Infrastruktur."
+            },
+            "consulting": {
+                "title": "Beratung",
+                "desc": "Wir beraten bei der Auswahl von Hardware und Software."
+            }
+        },
+        "pricing": {
+            "basic": {
+                "name": "Basis",
+                "price": "990 Kč",
+                "features": [
+                    "Reaktion innerhalb 24h",
+                    "Fernwartung",
+                    "1h Arbeit inklusive"
+                ]
+            },
+            "standard": {
+                "name": "Standard",
+                "price": "2990 Kč",
+                "features": [
+                    "Reaktion innerhalb 4h",
+                    "Fernwartung + Vor Ort",
+                    "5h Arbeit inklusive"
+                ]
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "Individuell",
+                "features": [
+                    "Sofortige Reaktion",
+                    "Unbegrenzter Support",
+                    "Dedizierter Techniker"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "title": "Projekte nach Maß",
+        "subtitle": "Websites, E-Shops und Netzwerke",
+        "desc": "Wir erstellen für Sie eine moderne Website, einen E-Shop oder entwerfen und implementieren ein Firmennetzwerk.",
+        "features": {
+            "web": {
+                "title": "Websites & E-Shops",
+                "desc": "Moderne, schnelle und responsive Websites."
+            },
+            "network": {
+                "title": "Netzwerke & Wi-Fi",
+                "desc": "Design und Implementierung stabiler Netzwerke."
+            },
+            "cameras": {
+                "title": "Kamerasysteme",
+                "desc": "Sicherung Ihrer Räumlichkeiten mit Kameras."
+            }
+        }
+    },
+    "contact": {
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Wir sind für Sie da",
+        "desc": "Haben Sie eine Frage oder benötigen Sie Beratung? Zögern Sie nicht, uns zu kontaktieren.",
+        "form": {
+            "name": "Name",
+            "email": "E-Mail",
+            "message": "Nachricht",
+            "submit": "Senden"
+        },
+        "info": {
+            "address": "Adresse",
+            "phone": "Telefon",
+            "email": "E-Mail"
+        }
+    },
+    "cta": {
+        "title": "Bereit, Ihre IT auf die nächste Stufe zu heben?",
+        "button": "Kontaktieren Sie uns"
     }
 }
