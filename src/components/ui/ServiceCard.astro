@@ -1,0 +1,57 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+  href: string;
+  featured?: boolean;
+}
+
+const { title, description, icon, href, featured = false } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    'group block card hover-lift overflow-hidden',
+    featured && 'lg:col-span-2 lg:row-span-2',
+  ]}
+>
+  <div class="flex flex-col h-full p-6 md:p-8">
+    <!-- Icon -->
+    <div
+      class:list={[
+        'w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110',
+        featured ? 'bg-[var(--color-primary)] text-white' : 'bg-[var(--color-emerald-100)] text-[var(--color-primary)]',
+      ]}
+    >
+      <Fragment set:html={icon} />
+    </div>
+
+    <!-- Content -->
+    <h3
+      class:list={[
+        'font-bold mb-3 group-hover:text-[var(--color-primary)] transition-colors',
+        featured ? 'text-2xl md:text-3xl' : 'text-xl',
+      ]}
+    >
+      {title}
+    </h3>
+    <p class="text-[var(--color-text-muted)] flex-grow">
+      {description}
+    </p>
+
+    <!-- Arrow -->
+    <div class="mt-6 flex items-center gap-2 text-[var(--color-primary)] font-medium">
+      <span class="group-hover:underline">Zjistit více</span>
+      <svg
+        class="w-5 h-5 transition-transform group-hover:translate-x-1"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+    </div>
+  </div>
+</a>

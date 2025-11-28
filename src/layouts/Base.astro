@@ -1,0 +1,161 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import { getLangFromUrl, useTranslations, getAlternateLinks } from '../i18n/utils';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+}
+
+const { title, description, image, noindex = false } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const alternateLinks = getAlternateLinks(Astro.url.pathname);
+
+const siteUrl = 'https://mesartim.cz';
+const defaultDescription = t('hero.subtitle');
+const defaultImage = `${siteUrl}/og-image.png`;
+
+const metaTitle = `${title} | Mesartim`;
+const metaDescription = description || defaultDescription;
+const metaImage = image || defaultImage;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{metaTitle}</title>
+    <meta name="title" content={metaTitle} />
+    <meta name="description" content={metaDescription} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:image" content={metaImage} />
+    <meta property="og:locale" content={lang} />
+    <meta property="og:site_name" content="Mesartim" />
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={metaTitle} />
+    <meta property="twitter:description" content={metaDescription} />
+    <meta property="twitter:image" content={metaImage} />
+
+    <!-- Alternate Language Links -->
+    {alternateLinks.map(({ lang: altLang, href }) => (
+      <link rel="alternate" hreflang={altLang} href={`${siteUrl}${href}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}/cs/`} />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={Astro.url} />
+
+    <!-- Fonts - Inter from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- View Transitions -->
+    <ClientRouter />
+
+    <!-- Google Analytics (загрузится после согласия на cookies) -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      // По умолчанию отключено до согласия
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+      });
+    </script>
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mesartim",
+      "url": siteUrl,
+      "logo": `${siteUrl}/logo.svg`,
+      "description": "IT solutions for small and medium businesses",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CZ"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+420-771-117-112",
+        "contactType": "customer service",
+        "email": "info@mesartim.cz",
+        "availableLanguage": ["Czech", "English", "Russian", "Ukrainian", "German", "Polish"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/mesartim",
+        "https://www.linkedin.com/company/mesartim",
+        "https://www.instagram.com/mesartim"
+      ]
+    })} />
+  </head>
+  <body class="min-h-screen bg-[var(--color-background)] text-[var(--color-text)] antialiased">
+    <slot />
+
+    <!-- Smooth page transitions -->
+    <style is:global>
+      @view-transition {
+        navigation: auto;
+      }
+
+      ::view-transition-old(root),
+      ::view-transition-new(root) {
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+      }
+
+      ::view-transition-old(root) {
+        animation-name: fade-out;
+      }
+
+      ::view-transition-new(root) {
+        animation-name: fade-in;
+      }
+
+      @keyframes fade-out {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </body>
+</html>

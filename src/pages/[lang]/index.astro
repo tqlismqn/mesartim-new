@@ -1,0 +1,176 @@
+---
+import Base from '../../layouts/Base.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import Button from '../../components/ui/Button.astro';
+import ServiceCard from '../../components/ui/ServiceCard.astro';
+import FeatureCard from '../../components/ui/FeatureCard.astro';
+import { getLangFromUrl, useTranslations, getLocalizedPath } from '../../i18n/utils';
+import { languages } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Service icons
+const icons = {
+  server: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>`,
+  cloud: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>`,
+  support: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>`,
+  projects: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>`,
+  experience: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>`,
+  fast: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+  shield: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>`,
+  price: `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
+};
+
+const services = [
+  {
+    key: 'accountingServer',
+    icon: icons.server,
+    href: 'services/accounting-server',
+    featured: true,
+  },
+  {
+    key: 'accountingBox',
+    icon: icons.cloud,
+    href: 'services/accounting-box',
+  },
+  {
+    key: 'itSupport',
+    icon: icons.support,
+    href: 'services/it-support',
+  },
+  {
+    key: 'projects',
+    icon: icons.projects,
+    href: 'services/projects',
+  },
+];
+
+const benefits = [
+  { icon: icons.experience, key: 'benefits.experience' },
+  { icon: icons.fast, key: 'benefits.support' },
+  { icon: icons.shield, key: 'benefits.security' },
+  { icon: icons.price, key: 'benefits.price' },
+];
+---
+
+<Base title={t('nav.home')}>
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center gradient-hero pt-20">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--color-emerald-400)] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--color-emerald-600)] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse" style="animation-delay: 1s;"></div>
+      </div>
+
+      <div class="container-custom relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="heading-xl text-balance mb-6 animate-slide-up" transition:name="hero-title">
+            {t('hero.title').split(' ').slice(0, -1).join(' ')}{' '}
+            <span class="gradient-text">{t('hero.title').split(' ').slice(-1)}</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.1s;">
+            {t('hero.subtitle')}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.2s;">
+            <Button href={getLocalizedPath(lang, 'contact')} size="lg">
+              {t('hero.cta')}
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Button>
+            <Button href="#services" variant="secondary" size="lg">
+              {t('hero.learnMore')}
+            </Button>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg class="w-6 h-6 text-[var(--color-text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-[var(--color-background)]">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="heading-lg mb-4">{t('services.title')}</h2>
+          <p class="text-xl text-[var(--color-text-muted)] max-w-2xl mx-auto">
+            {t('services.subtitle')}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => (
+            <ServiceCard
+              title={t(`${service.key}.title` as keyof typeof t)}
+              description={t(`${service.key}.description` as keyof typeof t)}
+              icon={service.icon}
+              href={getLocalizedPath(lang, service.href)}
+              featured={service.featured}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding gradient-bg">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="heading-lg mb-4">{t('benefits.title')}</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {benefits.map((benefit) => (
+            <FeatureCard
+              icon={benefit.icon}
+              title={t(benefit.key as keyof typeof t)}
+              description={t(`${benefit.key}.desc` as keyof typeof t)}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-[var(--color-emerald-950)] text-white relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-[var(--color-emerald-800)] rounded-full filter blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-[var(--color-emerald-700)] rounded-full filter blur-3xl opacity-30"></div>
+      </div>
+
+      <div class="container-custom relative z-10">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="heading-lg mb-6 text-balance">{t('cta.title')}</h2>
+          <p class="text-xl text-[var(--color-emerald-200)] mb-10">
+            {t('contact.description')}
+          </p>
+          <Button href={getLocalizedPath(lang, 'contact')} size="lg" class="bg-white text-[var(--color-emerald-900)] hover:bg-[var(--color-emerald-50)]">
+            {t('cta.button')}
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Base>
