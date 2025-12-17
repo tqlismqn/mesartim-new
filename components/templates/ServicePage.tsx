@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Link from 'next/link';
 import { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { cn } from '@/lib/utils';
 
 interface Feature {
   icon: LucideIcon;
@@ -36,7 +37,11 @@ export function ServicePage({
       <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <div className={`w-20 h-20 ${iconBg} rounded-2xl flex items-center justify-center ${iconColor} mx-auto mb-6`}>
+            <div className={cn(
+              "w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6",
+              iconBg,
+              iconColor
+            )}>
               <Icon className="w-10 h-10" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
