@@ -1,6 +1,282 @@
 {
   "common": {
     "company": "Mesartim",
-    "tagline": "Spolehlivá IT infrastruktura, zjednodušená"
+    "tagline": "Spolehlivá IT infrastruktura, zjednodušená",
+    "learnMore": "Zjistit více",
+    "getStarted": "Začít",
+    "contactUs": "Kontaktujte nás",
+    "contactSales": "Kontaktovat obchodní oddělení",
+    "goHome": "Zpět na hlavní stránku",
+    "tryAgain": "Zkusit znovu",
+    "menu": "Menu",
+    "allRightsReserved": "Všechna práva vyhrazena",
+    "requiredField": "*",
+    "optional": "volitelné"
+  },
+  "navigation": {
+    "accountingServer": "Accounting Server",
+    "cloudBackup": "Cloud Backup",
+    "itSupport": "IT Podpora",
+    "projects": "Projekty",
+    "customProjects": "Zakázkové projekty",
+    "contact": "Kontakt",
+    "aboutUs": "O nás",
+    "privacyPolicy": "Ochrana osobních údajů",
+    "termsOfService": "Obchodní podmínky",
+    "services": "Služby"
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Spolehlivá IT infrastruktura.",
+      "headlineAccent": "Zjednodušená.",
+      "subheadline": "Serverová řešení na podnikové úrovni, zabezpečené zálohy a odborná podpora. Navrženo pro růst vašeho podnikání."
+    },
+    "servicesSection": {
+      "title": "Vše, co potřebujete.",
+      "subtitle": "Komplexní IT řešení navržená pro bezproblémovou spolupráci.",
+      "accountingServer": {
+        "title": "Accounting Server",
+        "description": "Vysoce výkonné servery vzdálené plochy optimalizované pro účetní software jako Pohoda. Bezpečné, rychlé a dostupné odkudkoli."
+      },
+      "itSupport": {
+        "title": "IT Podpora",
+        "description": "Nepřetržitý monitoring 24/7 a rychlá reakce pro vaši kritickou infrastrukturu."
+      },
+      "cloudBackup": {
+        "title": "Cloud Backup",
+        "description": "Automatizované, šifrované zálohy zajišťující, že vaše data nikdy neztratíte."
+      },
+      "customProjects": {
+        "title": "Zakázkové projekty",
+        "description": "Od komplexních síťových nastavení po webové aplikace na míru. Vytvoříme to, co potřebujete."
+      }
+    },
+    "cta": {
+      "title": "Připraveni na upgrade?",
+      "subtitle": "Připojte se ke stovkám spokojených firem, které využívají naši infrastrukturu.",
+      "button": "Kontaktovat obchodní oddělení"
+    }
+  },
+  "accountingServer": {
+    "meta": {
+      "title": "Accounting Server - Vzdálená plocha pro Pohoda",
+      "description": "Vysoce výkonné servery vzdálené plochy optimalizované pro účetní software. Bezpečné, rychlé a dostupné odkudkoli."
+    },
+    "hero": {
+      "title": "Accounting Server",
+      "subtitle": "Vzdálená plocha optimalizovaná pro Pohoda",
+      "description": "Spusťte váš účetní software na vysoce výkonných cloudových serverech. Přístup odkudkoli se zabezpečením a spolehlivostí na podnikové úrovni."
+    },
+    "features": {
+      "title": "Klíčové vlastnosti",
+      "highPerformance": {
+        "title": "Vysoký výkon",
+        "description": "Optimalizováno pro účetní software s rychlými SSD disky a výkonnými procesory."
+      },
+      "secureAccess": {
+        "title": "Zabezpečený přístup",
+        "description": "Šifrování na úrovni bank a bezpečné protokoly vzdálené plochy."
+      },
+      "anywhereAccess": {
+        "title": "Přístup odkudkoli",
+        "description": "Pracujte z kanceláře, domova nebo na cestách s bezproblémovým připojením."
+      },
+      "scalableResources": {
+        "title": "Škálovatelné zdroje",
+        "description": "Snadno navyšujte CPU, RAM a úložiště s růstem vašeho podnikání."
+      },
+      "automatedBackups": {
+        "title": "Automatické zálohy",
+        "description": "Denní zálohy zajišťují, že vaše účetní data nikdy neztratíte."
+      },
+      "uptime": {
+        "title": "99,9% dostupnost",
+        "description": "Spolehlivá infrastruktura s redundancí a monitoringem."
+      }
+    },
+    "cta": {
+      "title": "Připraveni začít?",
+      "subtitle": "Kontaktujte nás ještě dnes a probereme vaše požadavky."
+    }
+  },
+  "cloudBackup": {
+    "meta": {
+      "title": "Cloud Backup - Zabezpečená ochrana dat",
+      "description": "Automatizované, šifrované cloudové zálohy pro vaše důležitá obchodní data. Už nikdy neztratíte důležité soubory."
+    },
+    "hero": {
+      "title": "Cloud Backup",
+      "subtitle": "Už nikdy neztratíte důležitá data",
+      "description": "Automatizované, šifrované zálohy běžící na pozadí. Chraňte své účetní údaje, dokumenty a kritické soubory pomocí cloudového úložiště na podnikové úrovni."
+    },
+    "features": {
+      "title": "Klíčové vlastnosti",
+      "militaryEncryption": {
+        "title": "Vojenské šifrování",
+        "description": "Vaše data jsou šifrována při přenosu i uložení pomocí AES-256."
+      },
+      "automatedBackups": {
+        "title": "Automatické denní zálohy",
+        "description": "Nastavte a zapomeňte. Zálohy probíhají automaticky podle vašeho plánu."
+      },
+      "versionHistory": {
+        "title": "Historie verzí",
+        "description": "Obnovte soubory z libovolného bodu v čase s neomezenou historií verzí."
+      },
+      "unlimitedStorage": {
+        "title": "Neomezené úložiště",
+        "description": "Žádné limity na úložiště. Zálohujte tolik dat, kolik potřebujete."
+      },
+      "easyRecovery": {
+        "title": "Snadné obnovení",
+        "description": "Obnovte jednotlivé soubory nebo celé systémy jediným kliknutím."
+      },
+      "geoRedundant": {
+        "title": "Geografická redundance",
+        "description": "Data replikována napříč více datovými centry pro maximální spolehlivost."
+      }
+    },
+    "cta": {
+      "title": "Připraveni začít?",
+      "subtitle": "Kontaktujte nás ještě dnes a probereme vaše požadavky."
+    }
+  },
+  "itSupport": {
+    "meta": {
+      "title": "IT Podpora - Monitoring a podpora 24/7",
+      "description": "Odborná IT podpora a monitoring pro vaši obchodní infrastrukturu. Rychlé doby odezvy a proaktivní údržba."
+    },
+    "hero": {
+      "title": "IT Podpora",
+      "subtitle": "Odborná podpora, když ji potřebujete",
+      "description": "Komplexní služby IT podpory a monitoringu. Od rutinní údržby po řešení krizových situací, udržujeme vaši infrastrukturu v hladkém provozu."
+    },
+    "features": {
+      "title": "Klíčové vlastnosti",
+      "monitoring": {
+        "title": "Monitoring 24/7",
+        "description": "Nepřetržitý monitoring systému pro zachycení problémů dříve, než ovlivní vaše podnikání."
+      },
+      "rapidResponse": {
+        "title": "Rychlá reakce",
+        "description": "Náš tým odborníků reaguje do 15 minut u kritických problémů."
+      },
+      "proactiveMaintenance": {
+        "title": "Proaktivní údržba",
+        "description": "Pravidelné aktualizace, opravy a optimalizace k prevenci problémů."
+      },
+      "issuePrevention": {
+        "title": "Prevence problémů",
+        "description": "Pokročilý monitoring detekuje potenciální selhání dříve, než nastanou."
+      },
+      "performanceOptimization": {
+        "title": "Optimalizace výkonu",
+        "description": "Kontinuální vyladění zajišťující, že vaše systémy běží na maximálním výkonu."
+      },
+      "securityHardening": {
+        "title": "Posílení zabezpečení",
+        "description": "Pravidelné bezpečnostní audity a aktualizace pro ochranu před hrozbami."
+      }
+    },
+    "cta": {
+      "title": "Připraveni začít?",
+      "subtitle": "Kontaktujte nás ještě dnes a probereme vaše požadavky."
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Zakázkové projekty - IT řešení na míru",
+      "description": "Zakázkový vývoj softwaru, síťová infrastruktura a IT projekty šité na míru vašim jedinečným obchodním potřebám."
+    },
+    "hero": {
+      "title": "Zakázkové projekty",
+      "subtitle": "Vytvořeno přesně podle vašich potřeb",
+      "description": "Žádné dva podniky nejsou stejné. Navrhujeme a vytváříme IT řešení na míru vašim jedinečným výzvám a příležitostem."
+    },
+    "features": {
+      "title": "Klíčové vlastnosti",
+      "webApplications": {
+        "title": "Webové aplikace",
+        "description": "Webové aplikace na míru vytvořené pomocí moderních frameworků a technologií."
+      },
+      "networkInfrastructure": {
+        "title": "Síťová infrastruktura",
+        "description": "Komplexní síťová nastavení, VPN a řešení připojení."
+      },
+      "systemIntegration": {
+        "title": "Integrace systémů",
+        "description": "Propojení rozdílných systémů a automatizace pracovních postupů."
+      },
+      "consulting": {
+        "title": "Konzultace",
+        "description": "Odborné vedení při technologických rozhodnutích a architektuře."
+      },
+      "rapidDeployment": {
+        "title": "Rychlé nasazení",
+        "description": "Agilní vývojový proces s rychlou dobou realizace."
+      },
+      "fullStack": {
+        "title": "Full Stack",
+        "description": "Komplexní řešení od databáze po uživatelské rozhraní."
+      }
+    },
+    "cta": {
+      "title": "Připraveni začít?",
+      "subtitle": "Kontaktujte nás ještě dnes a probereme vaše požadavky."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Spojte se s Mesartim. Jsme tu, abychom vám pomohli s vašimi potřebami IT infrastruktury."
+    },
+    "hero": {
+      "title": "Spojte se s námi",
+      "subtitle": "Máte otázky ohledně našich služeb? Jsme tu, abychom vám pomohli. Pošlete nám zprávu nebo nás zavolejte."
+    },
+    "form": {
+      "title": "Pošlete nám zprávu",
+      "nameLabel": "Celé jméno",
+      "namePlaceholder": "Jan Novák",
+      "emailLabel": "E-mailová adresa",
+      "emailPlaceholder": "jan@firma.cz",
+      "phoneLabel": "Telefonní číslo",
+      "phonePlaceholder": "+420 123 456 789",
+      "messageLabel": "Zpráva",
+      "messagePlaceholder": "Řekněte nám o vašem projektu nebo dotazu...",
+      "submitButton": "Odeslat zprávu",
+      "sendingButton": "Odesílání...",
+      "successMessage": "Zpráva úspěšně odeslána! Brzy se vám ozveme.",
+      "errorMessage": "Odeslání zprávy se nezdařilo. Zkuste to prosím znovu."
+    },
+    "info": {
+      "title": "Kontaktní informace",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "businessHours": "Pracovní doba",
+      "businessHoursWeekdays": "Pondělí - Pátek: 9:00 - 18:00",
+      "businessHoursWeekend": "Sobota - Neděle: Zavřeno",
+      "responseTime": {
+        "title": "Rychlá odpověď",
+        "description": "Na dotazy obvykle odpovídáme do 24 hodin v pracovních dnech. V naléhavých případech nás prosím zavolejte."
+      }
+    }
+  },
+  "footer": {
+    "description": "IT řešení infrastruktury na podnikové úrovni. Spolehlivé servery, zabezpečené zálohy a odborná podpora pro rostoucí podniky.",
+    "servicesTitle": "Služby",
+    "companyTitle": "Společnost",
+    "copyright": "© {{year}} Mesartim. Všechna práva vyhrazena."
+  },
+  "errors": {
+    "notFound": {
+      "title": "404",
+      "heading": "Stránka nenalezena",
+      "message": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta."
+    },
+    "error": {
+      "heading": "Něco se pokazilo",
+      "message": "Narazili jsme na neočekávanou chybu. Zkuste to prosím znovu."
+    }
   }
 }
