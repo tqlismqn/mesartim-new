@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { OrganizationStructuredData } from "@/components/seo/StructuredData";
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.variable}>
       <body className="min-h-screen flex flex-col bg-white font-sans">
+        <OrganizationStructuredData />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
