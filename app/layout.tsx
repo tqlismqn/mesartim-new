@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.variable}>
       <body className="min-h-screen flex flex-col bg-white font-sans">
-        {children}
+        <Navbar />
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
