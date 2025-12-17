@@ -1,44 +1,18 @@
 import { MetadataRoute } from 'next';
+import { locales, defaultLocale } from '@/i18n';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mesartim.com'; // TODO: Replace with actual domain
 
-  return [
-    {
-      url: baseUrl,
+  const routes = ['', '/accounting-server', '/accounting-box', '/it-support', '/projects', '/contact'];
+  const priorities = [1, 0.9, 0.8, 0.8, 0.7, 0.9];
+
+  return routes.flatMap((route, index) =>
+    locales.map((locale) => ({
+      url: `${baseUrl}${locale === defaultLocale ? '' : `/${locale}`}${route}`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/accounting-server`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/accounting-box`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/it-support`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/projects`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-  ];
+      changeFrequency: 'monthly' as const,
+      priority: priorities[index],
+    }))
+  );
 }
