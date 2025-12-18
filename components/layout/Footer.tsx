@@ -1,93 +1,120 @@
-import { Link } from '@/lib/navigation';
-import { Mail, Phone } from 'lucide-react';
+'use client';
+
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
+  const t = useTranslations('footer');
+  const tNav = useTranslations('navigation');
   const currentYear = new Date().getFullYear();
 
-  return (
-    <footer className="bg-gray-50 border-t border-gray-100">
-      <div className="container-custom py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
-          {/* Company Info */}
-          <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Mesartim</h3>
-            <p className="text-gray-600 mb-6 max-w-md">
-              Enterprise-grade IT infrastructure solutions. Reliable servers, secure backups, and expert support for growing businesses.
-            </p>
-            <div className="space-y-2 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                <a href="mailto:info@mesartim.com" className="hover:text-primary">
-                  info@mesartim.com
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <a href="tel:+1234567890" className="hover:text-primary">
-                  +1 (234) 567-890
-                </a>
-              </div>
-            </div>
-          </div>
+  const solutions = [
+    { href: '/tech-support', label: tNav('techSupport') },
+    { href: '/cloud-solutions', label: tNav('cloudSolutions') },
+    { href: '/security', label: tNav('security') },
+    { href: '/consulting', label: tNav('consulting') },
+  ];
 
-          {/* Services */}
+  const products = [
+    { href: '/accounting-server', label: tNav('accountingServer') },
+    { href: '/accounting-box', label: tNav('cloudBackup') },
+    { href: '/it-assistant', label: tNav('itSupport') },
+    { href: '/custom-projects', label: tNav('customProjects') },
+  ];
+
+  return (
+    <footer className="bg-gray-50 border-t border-gray-200">
+      <div className="container-custom py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          {/* Column 1: Company */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('company.title')}</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="/accounting-server" className="hover:text-primary">
-                  Accounting Server
+                <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
+                  {t('company.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/accounting-box" className="hover:text-primary">
-                  Cloud Backup
+                <Link href="/locations" className="text-gray-600 hover:text-gray-900 transition-colors">
+                  {t('company.locations')}
                 </Link>
               </li>
               <li>
-                <Link href="/it-support" className="hover:text-primary">
-                  IT Support
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-primary">
-                  Custom Projects
+                <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+                  {t('company.contact')}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Column 2: Solutions */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>
-                <Link href="/contact" className="hover:text-primary">
-                  Contact
-                </Link>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('solutions.title')}</h3>
+            <ul className="space-y-3">
+              {solutions.map((solution) => (
+                <li key={solution.href}>
+                  <Link href={solution.href} className="text-gray-600 hover:text-gray-900 transition-colors">
+                    {solution.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Products */}
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('products.title')}</h3>
+            <ul className="space-y-3">
+              {products.map((product) => (
+                <li key={product.href}>
+                  <Link href={product.href} className="text-gray-600 hover:text-gray-900 transition-colors">
+                    {product.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Contacts */}
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('contacts.title')}</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <div>
+                  <a href="tel:+420771117112" className="text-gray-600 hover:text-gray-900 transition-colors">
+                    +420 771 117 112
+                  </a>
+                </div>
               </li>
-              <li>
-                <a href="#" className="hover:text-primary">
-                  About Us
-                </a>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <div className="space-y-1">
+                  <a href="mailto:info@mesartim.cz" className="block text-gray-600 hover:text-gray-900 transition-colors">
+                    info@mesartim.cz
+                  </a>
+                  <a href="mailto:support@mesartim.cz" className="block text-gray-600 hover:text-gray-900 transition-colors">
+                    support@mesartim.cz
+                  </a>
+                </div>
               </li>
-              <li>
-                <a href="#" className="hover:text-primary">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary">
-                  Terms of Service
-                </a>
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <div className="text-sm text-gray-600">
+                  <div className="font-medium text-gray-900">{t('contacts.office')}</div>
+                  <div className="text-xs mt-1">{t('contacts.datacenters')}</div>
+                </div>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-          <p>&copy; {currentYear} Mesartim. All rights reserved.</p>
+        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
+          <p className="text-sm text-gray-600">
+            {t('copyright', { year: currentYear })}
+          </p>
         </div>
       </div>
     </footer>

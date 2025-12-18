@@ -24,7 +24,11 @@
     "aboutUs": "O nás",
     "privacyPolicy": "Ochrana osobních údajů",
     "termsOfService": "Obchodní podmínky",
-    "services": "Služby"
+    "services": "Služby",
+    "techSupport": "Technická podpora",
+    "cloudSolutions": "Cloudová řešení",
+    "security": "Bezpečnost",
+    "consulting": "Poradenství"
   },
   "homepage": {
     "hero": {
@@ -281,7 +285,24 @@
     "description": "IT řešení infrastruktury na podnikové úrovni. Spolehlivé servery, zabezpečené zálohy a odborná podpora pro rostoucí podniky.",
     "servicesTitle": "Služby",
     "companyTitle": "Společnost",
-    "copyright": "© {{year}} Mesartim. Všechna práva vyhrazena."
+    "copyright": "© {year} Mesartim. Všechna práva vyhrazena.",
+    "company": {
+      "title": "Společnost",
+      "about": "O nás",
+      "locations": "Lokace",
+      "contact": "Kontakt"
+    },
+    "solutions": {
+      "title": "Řešení"
+    },
+    "products": {
+      "title": "Produkty"
+    },
+    "contacts": {
+      "title": "Kontakty",
+      "office": "Kancelář v České republice",
+      "datacenters": "Datacentra: Německo, Finsko, ČR"
+    }
   },
   "errors": {
     "notFound": {
