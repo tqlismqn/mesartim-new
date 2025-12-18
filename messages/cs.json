@@ -327,5 +327,14 @@
       "success": "Zpráva úspěšně odeslána! Brzy vás kontaktujeme.",
       "error": "Chyba při odesílání. Zkuste to prosím znovu."
     }
+  },
+  "templates": {
+    "categoryPage": {
+      "featuresTitle": "Klíčové vlastnosti",
+      "productsTitle": "Naše produkty",
+      "ctaTitle": "Připraveni začít?",
+      "ctaDescription": "Kontaktujte nás pro individuální nabídku",
+      "learnMore": "Zjistit více"
+    }
   }
 }

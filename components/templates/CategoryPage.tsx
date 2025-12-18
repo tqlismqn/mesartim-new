@@ -1,9 +1,12 @@
+'use client';
+
 import { ReactNode } from 'react';
 import { LucideIcon } from 'lucide-react';
 import { ConsultationForm } from '@/components/forms/ConsultationForm';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface Feature {
   icon: LucideIcon;
@@ -42,6 +45,8 @@ export function CategoryPage({
   products,
   children
 }: CategoryPageProps) {
+  const t = useTranslations();
+
   return (
     <div>
       {/* Hero Section */}
@@ -65,7 +70,7 @@ export function CategoryPage({
       {/* Features Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Ключевые возможности</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('templates.categoryPage.featuresTitle')}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {features.map((feature, idx) => {
               const FeatureIcon = feature.icon;
@@ -89,7 +94,7 @@ export function CategoryPage({
       {/* Products Section */}
       <section className="section-padding gradient-bg-subtle">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Наши продукты</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{t('templates.categoryPage.productsTitle')}</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {products.map((product, idx) => {
               const ProductIcon = product.icon;
@@ -104,7 +109,7 @@ export function CategoryPage({
                     <p className="text-sm font-medium text-primary">{product.priceFrom}</p>
                   )}
                   <Link href={product.href}>
-                    <Button variant="outline" className="w-full">Подробнее</Button>
+                    <Button variant="outline" className="w-full">{t('templates.categoryPage.learnMore')}</Button>
                   </Link>
                 </div>
               );
@@ -117,9 +122,9 @@ export function CategoryPage({
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Готовы начать?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">{t('templates.categoryPage.ctaTitle')}</h2>
             <p className="text-lg text-gray-600 text-center mb-12">
-              Свяжитесь с нами для получения индивидуального предложения
+              {t('templates.categoryPage.ctaDescription')}
             </p>
             <div className="glass-card p-8">
               <ConsultationForm />
