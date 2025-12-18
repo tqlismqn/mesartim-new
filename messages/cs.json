@@ -53,9 +53,23 @@
       }
     },
     "cta": {
-      "title": "Připraveni na upgrade?",
-      "subtitle": "Připojte se ke stovkám spokojených firem, které využívají naši infrastrukturu.",
-      "button": "Kontaktovat obchodní oddělení"
+      "title": "Připraveni začít?",
+      "subtitle": "Spojte se s námi pro bezplatnou konzultaci. Najdeme optimální IT řešení pro váš byznys.",
+      "button": "Kontaktovat obchodní oddělení",
+      "benefits": {
+        "freeConsultation": "Bezplatná konzultace",
+        "quickResponse": "Odpověď do 24 hodin",
+        "customSolution": "Individuální řešení"
+      }
+    },
+    "trust": {
+      "title": "Proč Mesartim",
+      "datacenters": "Evropská datacentra",
+      "datacentersDesc": "Německo, Finsko, Česká republika",
+      "support": "Podpora 24/7",
+      "supportDesc": "Monitoring a rychlá reakce na problémy",
+      "expertise": "IT expertiza",
+      "expertiseDesc": "Specializace na účetní systémy a cloudová řešení"
     }
   },
   "accountingServer": {
