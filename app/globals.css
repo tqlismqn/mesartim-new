@@ -1,89 +1,34 @@
 @import "tailwindcss";
 
-/* Custom theme variables for Tailwind CSS 4 */
 @theme inline {
-  /* Primary Color Palette */
+  --color-primary-DEFAULT: #2563eb;
   --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary: #2563eb;
-
-  /* Accent Color Palette */
-  --color-accent-50: #faf5ff;
-  --color-accent-100: #f3e8ff;
-  --color-accent-200: #e9d5ff;
-  --color-accent-300: #d8b4fe;
-  --color-accent-400: #c084fc;
-  --color-accent-500: #a855f7;
-  --color-accent-600: #9333ea;
-  --color-accent-700: #7e22ce;
-  --color-accent-800: #6b21a8;
-  --color-accent-900: #581c87;
-  --color-accent: #8b5cf6;
-
-  /* Font Family */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-900: #111827;
   --font-sans: var(--font-geist-sans), system-ui, sans-serif;
-
-  /* Custom Font Sizes */
   --font-size-hero: clamp(2rem, 5vw, 5rem);
   --font-size-section-title: clamp(1.75rem, 4vw, 3rem);
-
-  /* Custom Spacing */
-  --spacing-128: 32rem;
-  --spacing-144: 36rem;
-
-  /* Custom Animations */
-  --animate-fade-in: fadeIn 0.6s ease-in-out;
-  --animate-slide-up: slideUp 0.5s ease-out;
 }
 
-/* Keyframe animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Base styles */
 @layer base {
   html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth;
   }
 
   body {
     @apply text-gray-900 antialiased bg-white;
-    font-family: var(--font-sans);
   }
 
-  /* Ensure min tap target size for accessibility (44px minimum) */
-  button,
-  a {
-    min-height: 44px;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900;
+  }
+
+  button, a {
+    @apply min-h-[44px];
   }
 }
 
-/* Utility classes */
 @layer utilities {
   .section-padding {
     @apply py-16 md:py-24 lg:py-32;
@@ -94,24 +39,25 @@
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow;
+    @apply bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200;
   }
 
-  /* Custom font size utilities */
-  .text-hero {
-    font-size: clamp(2rem, 5vw, 5rem);
+  .gradient-bg-subtle {
+    background-image: linear-gradient(to bottom right, #f9fafb, #ffffff, #eff6ff);
   }
 
-  .text-section-title {
-    font-size: clamp(1.75rem, 4vw, 3rem);
+  .text-balance {
+    text-wrap: balance;
   }
+}
 
-  /* Animation utilities */
-  .animate-fade-in {
-    animation: fadeIn 0.6s ease-in-out;
-  }
-
-  .animate-slide-up {
-    animation: slideUp 0.5s ease-out;
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
