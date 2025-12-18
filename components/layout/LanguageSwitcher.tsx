@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from '@/lib/navigation';
 import { locales, type Locale } from '@/i18n';
 import { Globe } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
