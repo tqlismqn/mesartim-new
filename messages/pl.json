@@ -1,6 +1,282 @@
 {
   "common": {
     "company": "Mesartim",
-    "tagline": "Niezawodna infrastruktura IT, uproszczona"
+    "tagline": "Niezawodna infrastruktura IT, uproszczona",
+    "learnMore": "Dowiedz się więcej",
+    "getStarted": "Rozpocznij",
+    "contactUs": "Skontaktuj się z nami",
+    "contactSales": "Skontaktuj się z działem sprzedaży",
+    "goHome": "Wróć na stronę główną",
+    "tryAgain": "Spróbuj ponownie",
+    "menu": "Menu",
+    "allRightsReserved": "Wszelkie prawa zastrzeżone",
+    "requiredField": "*",
+    "optional": "opcjonalne"
+  },
+  "navigation": {
+    "accountingServer": "Accounting Server",
+    "cloudBackup": "Cloud Backup",
+    "itSupport": "Wsparcie IT",
+    "projects": "Projekty",
+    "customProjects": "Projekty niestandardowe",
+    "contact": "Kontakt",
+    "aboutUs": "O nas",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfService": "Warunki usługi",
+    "services": "Usługi"
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Niezawodna infrastruktura IT.",
+      "headlineAccent": "Uproszczona.",
+      "subheadline": "Rozwiązania serwerowe na poziomie korporacyjnym, bezpieczne kopie zapasowe i wsparcie ekspertów. Zaprojektowane z myślą o rozwoju Twojej firmy."
+    },
+    "servicesSection": {
+      "title": "Wszystko, czego potrzebujesz.",
+      "subtitle": "Kompleksowe rozwiązania IT zaprojektowane do bezproblemowej współpracy.",
+      "accountingServer": {
+        "title": "Accounting Server",
+        "description": "Wysokowydajne serwery zdalnego pulpitu zoptymalizowane pod kątem oprogramowania księgowego, takiego jak Pohoda. Bezpieczne, szybkie i dostępne z każdego miejsca."
+      },
+      "itSupport": {
+        "title": "Wsparcie IT",
+        "description": "Monitoring 24/7 i szybka reakcja dla Twojej krytycznej infrastruktury."
+      },
+      "cloudBackup": {
+        "title": "Cloud Backup",
+        "description": "Zautomatyzowane, zaszyfrowane kopie zapasowe zapewniające, że nigdy nie stracisz swoich danych."
+      },
+      "customProjects": {
+        "title": "Projekty niestandardowe",
+        "description": "Od złożonych konfiguracji sieciowych po niestandardowe aplikacje webowe. Budujemy to, czego potrzebujesz."
+      }
+    },
+    "cta": {
+      "title": "Gotowy na upgrade?",
+      "subtitle": "Dołącz do setek zadowolonych firm korzystających z naszej infrastruktury.",
+      "button": "Skontaktuj się z działem sprzedaży"
+    }
+  },
+  "accountingServer": {
+    "meta": {
+      "title": "Accounting Server - Zdalny pulpit dla Pohoda",
+      "description": "Wysokowydajne serwery zdalnego pulpitu zoptymalizowane pod kątem oprogramowania księgowego. Bezpieczne, szybkie i dostępne z każdego miejsca."
+    },
+    "hero": {
+      "title": "Accounting Server",
+      "subtitle": "Zdalny pulpit zoptymalizowany dla Pohoda",
+      "description": "Uruchom swoje oprogramowanie księgowe na wysokowydajnych serwerach w chmurze. Dostęp z dowolnego miejsca z bezpieczeństwem i niezawodnością na poziomie korporacyjnym."
+    },
+    "features": {
+      "title": "Kluczowe funkcje",
+      "highPerformance": {
+        "title": "Wysoka wydajność",
+        "description": "Zoptymalizowane pod kątem oprogramowania księgowego z szybkimi dyskami SSD i wydajnymi procesorami."
+      },
+      "secureAccess": {
+        "title": "Bezpieczny dostęp",
+        "description": "Szyfrowanie na poziomie bankowym i bezpieczne protokoły zdalnego pulpitu."
+      },
+      "anywhereAccess": {
+        "title": "Dostęp z każdego miejsca",
+        "description": "Pracuj z biura, domu lub w podróży dzięki bezproblemowej łączności."
+      },
+      "scalableResources": {
+        "title": "Skalowalne zasoby",
+        "description": "Łatwo zwiększaj CPU, RAM i pamięć masową wraz z rozwojem firmy."
+      },
+      "automatedBackups": {
+        "title": "Automatyczne kopie zapasowe",
+        "description": "Codzienne kopie zapasowe zapewniają, że nigdy nie stracisz swoich danych księgowych."
+      },
+      "uptime": {
+        "title": "99,9% dostępność",
+        "description": "Niezawodna infrastruktura z redundancją i monitoringiem."
+      }
+    },
+    "cta": {
+      "title": "Gotowy zacząć?",
+      "subtitle": "Skontaktuj się z nami już dziś, aby omówić swoje wymagania."
+    }
+  },
+  "cloudBackup": {
+    "meta": {
+      "title": "Cloud Backup - Bezpieczna ochrona danych",
+      "description": "Zautomatyzowane, zaszyfrowane kopie zapasowe w chmurze dla Twoich krytycznych danych biznesowych. Nigdy więcej nie trać ważnych plików."
+    },
+    "hero": {
+      "title": "Cloud Backup",
+      "subtitle": "Nigdy więcej nie trać krytycznych danych",
+      "description": "Zautomatyzowane, zaszyfrowane kopie zapasowe działające w tle. Chroń swoje dane księgowe, dokumenty i krytyczne pliki dzięki magazynowi w chmurze na poziomie korporacyjnym."
+    },
+    "features": {
+      "title": "Kluczowe funkcje",
+      "militaryEncryption": {
+        "title": "Szyfrowanie wojskowe",
+        "description": "Twoje dane są szyfrowane podczas przesyłania i przechowywania przy użyciu AES-256."
+      },
+      "automatedBackups": {
+        "title": "Automatyczne codzienne kopie zapasowe",
+        "description": "Ustaw i zapomnij. Kopie zapasowe są tworzone automatycznie według Twojego harmonogramu."
+      },
+      "versionHistory": {
+        "title": "Historia wersji",
+        "description": "Przywracaj pliki z dowolnego punktu w czasie dzięki nieograniczonej historii wersji."
+      },
+      "unlimitedStorage": {
+        "title": "Nieograniczona pamięć",
+        "description": "Brak limitów na pamięć masową. Twórz kopie zapasowe tylu danych, ile potrzebujesz."
+      },
+      "easyRecovery": {
+        "title": "Łatwe odzyskiwanie",
+        "description": "Przywracaj pojedyncze pliki lub całe systemy jednym kliknięciem."
+      },
+      "geoRedundant": {
+        "title": "Redundancja geograficzna",
+        "description": "Dane replikowane w wielu centrach danych dla maksymalnej niezawodności."
+      }
+    },
+    "cta": {
+      "title": "Gotowy zacząć?",
+      "subtitle": "Skontaktuj się z nami już dziś, aby omówić swoje wymagania."
+    }
+  },
+  "itSupport": {
+    "meta": {
+      "title": "Wsparcie IT - Monitoring i wsparcie 24/7",
+      "description": "Eksperckie wsparcie IT i monitoring dla Twojej infrastruktury biznesowej. Szybkie czasy reakcji i proaktywna konserwacja."
+    },
+    "hero": {
+      "title": "Wsparcie IT",
+      "subtitle": "Eksperckie wsparcie, gdy tego potrzebujesz",
+      "description": "Kompleksowe usługi wsparcia IT i monitoringu. Od rutynowej konserwacji po rozwiązywanie kryzysów, utrzymujemy Twoją infrastrukturę w sprawnym działaniu."
+    },
+    "features": {
+      "title": "Kluczowe funkcje",
+      "monitoring": {
+        "title": "Monitoring 24/7",
+        "description": "Ciągły monitoring systemu w celu wykrycia problemów, zanim wpłyną na Twoją firmę."
+      },
+      "rapidResponse": {
+        "title": "Szybka reakcja",
+        "description": "Nasz zespół ekspertów reaguje w ciągu 15 minut w przypadku krytycznych problemów."
+      },
+      "proactiveMaintenance": {
+        "title": "Proaktywna konserwacja",
+        "description": "Regularne aktualizacje, poprawki i optymalizacje w celu zapobiegania problemom."
+      },
+      "issuePrevention": {
+        "title": "Zapobieganie problemom",
+        "description": "Zaawansowany monitoring wykrywa potencjalne awarie, zanim wystąpią."
+      },
+      "performanceOptimization": {
+        "title": "Optymalizacja wydajności",
+        "description": "Ciągłe dostrajanie zapewnia, że Twoje systemy działają z maksymalną wydajnością."
+      },
+      "securityHardening": {
+        "title": "Wzmacnianie bezpieczeństwa",
+        "description": "Regularne audyty bezpieczeństwa i aktualizacje w celu ochrony przed zagrożeniami."
+      }
+    },
+    "cta": {
+      "title": "Gotowy zacząć?",
+      "subtitle": "Skontaktuj się z nami już dziś, aby omówić swoje wymagania."
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projekty niestandardowe - Dopasowane rozwiązania IT",
+      "description": "Niestandardowe tworzenie oprogramowania, infrastruktura sieciowa i projekty IT dostosowane do Twoich unikalnych potrzeb biznesowych."
+    },
+    "hero": {
+      "title": "Projekty niestandardowe",
+      "subtitle": "Zbudowane dokładnie według Twoich specyfikacji",
+      "description": "Żadne dwie firmy nie są takie same. Projektujemy i budujemy niestandardowe rozwiązania IT dostosowane do Twoich unikalnych wyzwań i możliwości."
+    },
+    "features": {
+      "title": "Kluczowe funkcje",
+      "webApplications": {
+        "title": "Aplikacje webowe",
+        "description": "Niestandardowe aplikacje webowe zbudowane przy użyciu nowoczesnych frameworków i technologii."
+      },
+      "networkInfrastructure": {
+        "title": "Infrastruktura sieciowa",
+        "description": "Złożone konfiguracje sieciowe, VPN i rozwiązania łączności."
+      },
+      "systemIntegration": {
+        "title": "Integracja systemów",
+        "description": "Łączenie różnych systemów i automatyzacja przepływów pracy."
+      },
+      "consulting": {
+        "title": "Konsulting",
+        "description": "Eksperckie wskazówki dotyczące decyzji technologicznych i architektury."
+      },
+      "rapidDeployment": {
+        "title": "Szybkie wdrożenie",
+        "description": "Zwinny proces rozwoju z szybkim czasem realizacji."
+      },
+      "fullStack": {
+        "title": "Full Stack",
+        "description": "Kompleksowe rozwiązania od bazy danych po interfejs użytkownika."
+      }
+    },
+    "cta": {
+      "title": "Gotowy zacząć?",
+      "subtitle": "Skontaktuj się z nami już dziś, aby omówić swoje wymagania."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się z Mesartim. Jesteśmy tutaj, aby pomóc w Twoich potrzebach związanych z infrastrukturą IT."
+    },
+    "hero": {
+      "title": "Skontaktuj się z nami",
+      "subtitle": "Masz pytania dotyczące naszych usług? Jesteśmy tutaj, aby pomóc. Wyślij nam wiadomość lub zadzwoń."
+    },
+    "form": {
+      "title": "Wyślij nam wiadomość",
+      "nameLabel": "Imię i nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "jan@firma.pl",
+      "phoneLabel": "Numer telefonu",
+      "phonePlaceholder": "+48 123 456 789",
+      "messageLabel": "Wiadomość",
+      "messagePlaceholder": "Opowiedz nam o swoim projekcie lub zapytaniu...",
+      "submitButton": "Wyślij wiadomość",
+      "sendingButton": "Wysyłanie...",
+      "successMessage": "Wiadomość wysłana pomyślnie! Wkrótce się z Tobą skontaktujemy.",
+      "errorMessage": "Nie udało się wysłać wiadomości. Spróbuj ponownie."
+    },
+    "info": {
+      "title": "Informacje kontaktowe",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "businessHours": "Godziny pracy",
+      "businessHoursWeekdays": "Poniedziałek - Piątek: 9:00 - 18:00",
+      "businessHoursWeekend": "Sobota - Niedziela: Zamknięte",
+      "responseTime": {
+        "title": "Szybka odpowiedź",
+        "description": "Zazwyczaj odpowiadamy na zapytania w ciągu 24 godzin w dni robocze. W pilnych sprawach prosimy o kontakt telefoniczny."
+      }
+    }
+  },
+  "footer": {
+    "description": "Rozwiązania infrastruktury IT na poziomie korporacyjnym. Niezawodne serwery, bezpieczne kopie zapasowe i eksperckie wsparcie dla rozwijających się firm.",
+    "servicesTitle": "Usługi",
+    "companyTitle": "Firma",
+    "copyright": "© {{year}} Mesartim. Wszelkie prawa zastrzeżone."
+  },
+  "errors": {
+    "notFound": {
+      "title": "404",
+      "heading": "Strona nie znaleziona",
+      "message": "Strona, której szukasz, nie istnieje lub została przeniesiona."
+    },
+    "error": {
+      "heading": "Coś poszło nie tak",
+      "message": "Napotkaliśmy nieoczekiwany błąd. Spróbuj ponownie."
+    }
   }
 }

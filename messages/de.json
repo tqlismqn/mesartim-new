@@ -1,6 +1,282 @@
 {
   "common": {
     "company": "Mesartim",
-    "tagline": "Zuverlässige IT-Infrastruktur, vereinfacht"
+    "tagline": "Zuverlässige IT-Infrastruktur, vereinfacht",
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen",
+    "contactUs": "Kontaktieren Sie uns",
+    "contactSales": "Vertrieb kontaktieren",
+    "goHome": "Zur Startseite",
+    "tryAgain": "Erneut versuchen",
+    "menu": "Menü",
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "requiredField": "*",
+    "optional": "optional"
+  },
+  "navigation": {
+    "accountingServer": "Accounting Server",
+    "cloudBackup": "Cloud Backup",
+    "itSupport": "IT-Support",
+    "projects": "Projekte",
+    "customProjects": "Individuelle Projekte",
+    "contact": "Kontakt",
+    "aboutUs": "Über uns",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Geschäftsbedingungen",
+    "services": "Dienstleistungen"
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Zuverlässige IT-Infrastruktur.",
+      "headlineAccent": "Vereinfacht.",
+      "subheadline": "Serverlösungen auf Unternehmensniveau, sichere Backups und Expertenunterstützung. Entwickelt für das Wachstum Ihres Unternehmens."
+    },
+    "servicesSection": {
+      "title": "Alles, was Sie brauchen.",
+      "subtitle": "Umfassende IT-Lösungen, die nahtlos zusammenarbeiten.",
+      "accountingServer": {
+        "title": "Accounting Server",
+        "description": "Hochleistungs-Remote-Desktop-Server, optimiert für Buchhaltungssoftware wie Pohoda. Sicher, schnell und von überall zugänglich."
+      },
+      "itSupport": {
+        "title": "IT-Support",
+        "description": "24/7-Überwachung und schnelle Reaktion für Ihre kritische Infrastruktur."
+      },
+      "cloudBackup": {
+        "title": "Cloud Backup",
+        "description": "Automatisierte, verschlüsselte Backups, die sicherstellen, dass Sie Ihre Daten nie verlieren."
+      },
+      "customProjects": {
+        "title": "Individuelle Projekte",
+        "description": "Von komplexen Netzwerk-Setups bis zu individuellen Webanwendungen. Wir bauen, was Sie brauchen."
+      }
+    },
+    "cta": {
+      "title": "Bereit für ein Upgrade?",
+      "subtitle": "Schließen Sie sich Hunderten zufriedener Unternehmen an, die unsere Infrastruktur nutzen.",
+      "button": "Vertrieb kontaktieren"
+    }
+  },
+  "accountingServer": {
+    "meta": {
+      "title": "Accounting Server - Remote Desktop für Pohoda",
+      "description": "Hochleistungs-Remote-Desktop-Server, optimiert für Buchhaltungssoftware. Sicher, schnell und von überall zugänglich."
+    },
+    "hero": {
+      "title": "Accounting Server",
+      "subtitle": "Remote Desktop optimiert für Pohoda",
+      "description": "Führen Sie Ihre Buchhaltungssoftware auf Hochleistungs-Cloud-Servern aus. Zugriff von überall mit Sicherheit und Zuverlässigkeit auf Unternehmensniveau."
+    },
+    "features": {
+      "title": "Hauptmerkmale",
+      "highPerformance": {
+        "title": "Hohe Leistung",
+        "description": "Optimiert für Buchhaltungssoftware mit schnellen SSD-Laufwerken und leistungsstarken Prozessoren."
+      },
+      "secureAccess": {
+        "title": "Sicherer Zugriff",
+        "description": "Verschlüsselung auf Bankniveau und sichere Remote-Desktop-Protokolle."
+      },
+      "anywhereAccess": {
+        "title": "Zugriff von überall",
+        "description": "Arbeiten Sie vom Büro, zu Hause oder unterwegs mit nahtloser Konnektivität."
+      },
+      "scalableResources": {
+        "title": "Skalierbare Ressourcen",
+        "description": "Erhöhen Sie CPU, RAM und Speicher einfach, wenn Ihr Unternehmen wächst."
+      },
+      "automatedBackups": {
+        "title": "Automatische Backups",
+        "description": "Tägliche Backups stellen sicher, dass Sie Ihre Buchhaltungsdaten nie verlieren."
+      },
+      "uptime": {
+        "title": "99,9% Verfügbarkeit",
+        "description": "Zuverlässige Infrastruktur mit Redundanz und Überwachung."
+      }
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "subtitle": "Kontaktieren Sie uns noch heute, um Ihre Anforderungen zu besprechen."
+    }
+  },
+  "cloudBackup": {
+    "meta": {
+      "title": "Cloud Backup - Sicherer Datenschutz",
+      "description": "Automatisierte, verschlüsselte Cloud-Backups für Ihre kritischen Geschäftsdaten. Verlieren Sie nie wieder wichtige Dateien."
+    },
+    "hero": {
+      "title": "Cloud Backup",
+      "subtitle": "Verlieren Sie nie wieder kritische Daten",
+      "description": "Automatisierte, verschlüsselte Backups im Hintergrund. Schützen Sie Ihre Buchhaltungsdaten, Dokumente und kritischen Dateien mit Cloud-Speicher auf Unternehmensniveau."
+    },
+    "features": {
+      "title": "Hauptmerkmale",
+      "militaryEncryption": {
+        "title": "Militärische Verschlüsselung",
+        "description": "Ihre Daten werden während der Übertragung und im Ruhezustand mit AES-256 verschlüsselt."
+      },
+      "automatedBackups": {
+        "title": "Automatische tägliche Backups",
+        "description": "Einstellen und vergessen. Backups werden automatisch nach Ihrem Zeitplan ausgeführt."
+      },
+      "versionHistory": {
+        "title": "Versionsverlauf",
+        "description": "Stellen Sie Dateien von jedem Zeitpunkt mit unbegrenztem Versionsverlauf wieder her."
+      },
+      "unlimitedStorage": {
+        "title": "Unbegrenzter Speicher",
+        "description": "Keine Begrenzung des Speichers. Sichern Sie so viele Daten, wie Sie benötigen."
+      },
+      "easyRecovery": {
+        "title": "Einfache Wiederherstellung",
+        "description": "Stellen Sie einzelne Dateien oder ganze Systeme mit einem Klick wieder her."
+      },
+      "geoRedundant": {
+        "title": "Geografische Redundanz",
+        "description": "Daten werden über mehrere Rechenzentren repliziert für maximale Zuverlässigkeit."
+      }
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "subtitle": "Kontaktieren Sie uns noch heute, um Ihre Anforderungen zu besprechen."
+    }
+  },
+  "itSupport": {
+    "meta": {
+      "title": "IT-Support - 24/7 Überwachung und Support",
+      "description": "Experten-IT-Support und Überwachung für Ihre Geschäftsinfrastruktur. Schnelle Reaktionszeiten und proaktive Wartung."
+    },
+    "hero": {
+      "title": "IT-Support",
+      "subtitle": "Expertenunterstützung, wenn Sie sie brauchen",
+      "description": "Umfassende IT-Support- und Überwachungsdienste. Von routinemäßiger Wartung bis zur Krisenbewältigung halten wir Ihre Infrastruktur am Laufen."
+    },
+    "features": {
+      "title": "Hauptmerkmale",
+      "monitoring": {
+        "title": "24/7 Überwachung",
+        "description": "Kontinuierliche Systemüberwachung zur Erkennung von Problemen, bevor sie Ihr Unternehmen beeinträchtigen."
+      },
+      "rapidResponse": {
+        "title": "Schnelle Reaktion",
+        "description": "Unser Expertenteam reagiert innerhalb von 15 Minuten bei kritischen Problemen."
+      },
+      "proactiveMaintenance": {
+        "title": "Proaktive Wartung",
+        "description": "Regelmäßige Updates, Patches und Optimierungen zur Vermeidung von Problemen."
+      },
+      "issuePrevention": {
+        "title": "Problemprävention",
+        "description": "Erweiterte Überwachung erkennt potenzielle Ausfälle, bevor sie auftreten."
+      },
+      "performanceOptimization": {
+        "title": "Leistungsoptimierung",
+        "description": "Kontinuierliche Feinabstimmung stellt sicher, dass Ihre Systeme mit Höchstleistung laufen."
+      },
+      "securityHardening": {
+        "title": "Sicherheitshärtung",
+        "description": "Regelmäßige Sicherheitsaudits und Updates zum Schutz vor Bedrohungen."
+      }
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "subtitle": "Kontaktieren Sie uns noch heute, um Ihre Anforderungen zu besprechen."
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Individuelle Projekte - Maßgeschneiderte IT-Lösungen",
+      "description": "Individuelle Softwareentwicklung, Netzwerkinfrastruktur und IT-Projekte, maßgeschneidert auf Ihre einzigartigen Geschäftsbedürfnisse."
+    },
+    "hero": {
+      "title": "Individuelle Projekte",
+      "subtitle": "Genau nach Ihren Spezifikationen gebaut",
+      "description": "Kein Unternehmen gleicht dem anderen. Wir entwerfen und entwickeln maßgeschneiderte IT-Lösungen für Ihre einzigartigen Herausforderungen und Chancen."
+    },
+    "features": {
+      "title": "Hauptmerkmale",
+      "webApplications": {
+        "title": "Webanwendungen",
+        "description": "Individuelle Webanwendungen, erstellt mit modernen Frameworks und Technologien."
+      },
+      "networkInfrastructure": {
+        "title": "Netzwerkinfrastruktur",
+        "description": "Komplexe Netzwerk-Setups, VPN und Konnektivitätslösungen."
+      },
+      "systemIntegration": {
+        "title": "Systemintegration",
+        "description": "Verbindung unterschiedlicher Systeme und Automatisierung von Arbeitsabläufen."
+      },
+      "consulting": {
+        "title": "Beratung",
+        "description": "Expertenberatung bei Technologieentscheidungen und Architektur."
+      },
+      "rapidDeployment": {
+        "title": "Schnelle Bereitstellung",
+        "description": "Agiler Entwicklungsprozess mit schnellen Durchlaufzeiten."
+      },
+      "fullStack": {
+        "title": "Full Stack",
+        "description": "Komplettlösungen von der Datenbank bis zur Benutzeroberfläche."
+      }
+    },
+    "cta": {
+      "title": "Bereit loszulegen?",
+      "subtitle": "Kontaktieren Sie uns noch heute, um Ihre Anforderungen zu besprechen."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie Mesartim. Wir sind hier, um bei Ihren IT-Infrastrukturbedürfnissen zu helfen."
+    },
+    "hero": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Haben Sie Fragen zu unseren Dienstleistungen? Wir sind hier, um zu helfen. Senden Sie uns eine Nachricht oder rufen Sie uns an."
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Max Mustermann",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "max@firma.de",
+      "phoneLabel": "Telefonnummer",
+      "phonePlaceholder": "+49 123 456 789",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt oder Ihrer Anfrage...",
+      "submitButton": "Nachricht senden",
+      "sendingButton": "Wird gesendet...",
+      "successMessage": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen.",
+      "errorMessage": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "businessHours": "Geschäftszeiten",
+      "businessHoursWeekdays": "Montag - Freitag: 9:00 - 18:00 Uhr",
+      "businessHoursWeekend": "Samstag - Sonntag: Geschlossen",
+      "responseTime": {
+        "title": "Schnelle Antwort",
+        "description": "Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen auf Anfragen. Bei dringenden Angelegenheiten rufen Sie uns bitte an."
+      }
+    }
+  },
+  "footer": {
+    "description": "IT-Infrastrukturlösungen auf Unternehmensniveau. Zuverlässige Server, sichere Backups und Expertenunterstützung für wachsende Unternehmen.",
+    "servicesTitle": "Dienstleistungen",
+    "companyTitle": "Unternehmen",
+    "copyright": "© {{year}} Mesartim. Alle Rechte vorbehalten."
+  },
+  "errors": {
+    "notFound": {
+      "title": "404",
+      "heading": "Seite nicht gefunden",
+      "message": "Die gesuchte Seite existiert nicht oder wurde verschoben."
+    },
+    "error": {
+      "heading": "Etwas ist schiefgelaufen",
+      "message": "Wir sind auf einen unerwarteten Fehler gestoßen. Bitte versuchen Sie es erneut."
+    }
   }
 }

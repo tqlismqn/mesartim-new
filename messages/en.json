@@ -1,6 +1,282 @@
 {
   "common": {
     "company": "Mesartim",
-    "tagline": "Reliable IT Infrastructure, Simplified"
+    "tagline": "Reliable IT Infrastructure, Simplified",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "contactSales": "Contact Sales",
+    "goHome": "Go to Homepage",
+    "tryAgain": "Try Again",
+    "menu": "Menu",
+    "allRightsReserved": "All Rights Reserved",
+    "requiredField": "*",
+    "optional": "optional"
+  },
+  "navigation": {
+    "accountingServer": "Accounting Server",
+    "cloudBackup": "Cloud Backup",
+    "itSupport": "IT Support",
+    "projects": "Projects",
+    "customProjects": "Custom Projects",
+    "contact": "Contact",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "services": "Services"
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Reliable IT Infrastructure.",
+      "headlineAccent": "Simplified.",
+      "subheadline": "Enterprise-grade server solutions, secure backups, and expert support. Designed to grow your business."
+    },
+    "servicesSection": {
+      "title": "Everything You Need.",
+      "subtitle": "Comprehensive IT solutions designed to work seamlessly together.",
+      "accountingServer": {
+        "title": "Accounting Server",
+        "description": "High-performance remote desktop servers optimized for accounting software like Pohoda. Secure, fast, and accessible from anywhere."
+      },
+      "itSupport": {
+        "title": "IT Support",
+        "description": "24/7 monitoring and rapid response for your critical infrastructure."
+      },
+      "cloudBackup": {
+        "title": "Cloud Backup",
+        "description": "Automated, encrypted backups ensuring you never lose your data."
+      },
+      "customProjects": {
+        "title": "Custom Projects",
+        "description": "From complex network setups to custom web applications. We build what you need."
+      }
+    },
+    "cta": {
+      "title": "Ready to Upgrade?",
+      "subtitle": "Join hundreds of satisfied businesses using our infrastructure.",
+      "button": "Contact Sales"
+    }
+  },
+  "accountingServer": {
+    "meta": {
+      "title": "Accounting Server - Remote Desktop for Pohoda",
+      "description": "High-performance remote desktop servers optimized for accounting software. Secure, fast, and accessible from anywhere."
+    },
+    "hero": {
+      "title": "Accounting Server",
+      "subtitle": "Remote Desktop Optimized for Pohoda",
+      "description": "Run your accounting software on high-performance cloud servers. Access from anywhere with enterprise-grade security and reliability."
+    },
+    "features": {
+      "title": "Key Features",
+      "highPerformance": {
+        "title": "High Performance",
+        "description": "Optimized for accounting software with fast SSD drives and powerful processors."
+      },
+      "secureAccess": {
+        "title": "Secure Access",
+        "description": "Bank-level encryption and secure remote desktop protocols."
+      },
+      "anywhereAccess": {
+        "title": "Access from Anywhere",
+        "description": "Work from the office, home, or on the go with seamless connectivity."
+      },
+      "scalableResources": {
+        "title": "Scalable Resources",
+        "description": "Easily increase CPU, RAM, and storage as your business grows."
+      },
+      "automatedBackups": {
+        "title": "Automated Backups",
+        "description": "Daily backups ensure you never lose your accounting data."
+      },
+      "uptime": {
+        "title": "99.9% Uptime",
+        "description": "Reliable infrastructure with redundancy and monitoring."
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Contact us today to discuss your requirements."
+    }
+  },
+  "cloudBackup": {
+    "meta": {
+      "title": "Cloud Backup - Secure Data Protection",
+      "description": "Automated, encrypted cloud backups for your critical business data. Never lose important files again."
+    },
+    "hero": {
+      "title": "Cloud Backup",
+      "subtitle": "Never Lose Critical Data Again",
+      "description": "Automated, encrypted backups running in the background. Protect your accounting data, documents, and critical files with enterprise-grade cloud storage."
+    },
+    "features": {
+      "title": "Key Features",
+      "militaryEncryption": {
+        "title": "Military-Grade Encryption",
+        "description": "Your data is encrypted in transit and at rest using AES-256."
+      },
+      "automatedBackups": {
+        "title": "Automated Daily Backups",
+        "description": "Set it and forget it. Backups run automatically on your schedule."
+      },
+      "versionHistory": {
+        "title": "Version History",
+        "description": "Restore files from any point in time with unlimited version history."
+      },
+      "unlimitedStorage": {
+        "title": "Unlimited Storage",
+        "description": "No limits on storage. Backup as much data as you need."
+      },
+      "easyRecovery": {
+        "title": "Easy Recovery",
+        "description": "Restore individual files or entire systems with a single click."
+      },
+      "geoRedundant": {
+        "title": "Geographic Redundancy",
+        "description": "Data replicated across multiple data centers for maximum reliability."
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Contact us today to discuss your requirements."
+    }
+  },
+  "itSupport": {
+    "meta": {
+      "title": "IT Support - 24/7 Monitoring and Support",
+      "description": "Expert IT support and monitoring for your business infrastructure. Fast response times and proactive maintenance."
+    },
+    "hero": {
+      "title": "IT Support",
+      "subtitle": "Expert Support When You Need It",
+      "description": "Comprehensive IT support and monitoring services. From routine maintenance to crisis resolution, we keep your infrastructure running smoothly."
+    },
+    "features": {
+      "title": "Key Features",
+      "monitoring": {
+        "title": "24/7 Monitoring",
+        "description": "Continuous system monitoring to catch issues before they impact your business."
+      },
+      "rapidResponse": {
+        "title": "Rapid Response",
+        "description": "Our team of experts responds within 15 minutes for critical issues."
+      },
+      "proactiveMaintenance": {
+        "title": "Proactive Maintenance",
+        "description": "Regular updates, patches, and optimizations to prevent problems."
+      },
+      "issuePrevention": {
+        "title": "Issue Prevention",
+        "description": "Advanced monitoring detects potential failures before they occur."
+      },
+      "performanceOptimization": {
+        "title": "Performance Optimization",
+        "description": "Continuous tuning ensures your systems run at peak performance."
+      },
+      "securityHardening": {
+        "title": "Security Hardening",
+        "description": "Regular security audits and updates to protect against threats."
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Contact us today to discuss your requirements."
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Custom Projects - Tailored IT Solutions",
+      "description": "Custom software development, network infrastructure, and IT projects tailored to your unique business needs."
+    },
+    "hero": {
+      "title": "Custom Projects",
+      "subtitle": "Built Exactly to Your Specifications",
+      "description": "No two businesses are the same. We design and build custom IT solutions tailored to your unique challenges and opportunities."
+    },
+    "features": {
+      "title": "Key Features",
+      "webApplications": {
+        "title": "Web Applications",
+        "description": "Custom web applications built using modern frameworks and technologies."
+      },
+      "networkInfrastructure": {
+        "title": "Network Infrastructure",
+        "description": "Complex network setups, VPN, and connectivity solutions."
+      },
+      "systemIntegration": {
+        "title": "System Integration",
+        "description": "Connecting disparate systems and automating workflows."
+      },
+      "consulting": {
+        "title": "Consulting",
+        "description": "Expert guidance on technology decisions and architecture."
+      },
+      "rapidDeployment": {
+        "title": "Rapid Deployment",
+        "description": "Agile development process with fast turnaround times."
+      },
+      "fullStack": {
+        "title": "Full Stack",
+        "description": "Complete solutions from database to user interface."
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Contact us today to discuss your requirements."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Get in touch with Mesartim. We're here to help with your IT infrastructure needs."
+    },
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Have questions about our services? We're here to help. Send us a message or give us a call."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "John Smith",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "john@company.com",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+1 234 567 890",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your project or inquiry...",
+      "submitButton": "Send Message",
+      "sendingButton": "Sending...",
+      "successMessage": "Message sent successfully! We'll get back to you soon.",
+      "errorMessage": "Failed to send message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "businessHours": "Business Hours",
+      "businessHoursWeekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+      "businessHoursWeekend": "Saturday - Sunday: Closed",
+      "responseTime": {
+        "title": "Fast Response",
+        "description": "We typically respond to inquiries within 24 hours on business days. For urgent matters, please call us."
+      }
+    }
+  },
+  "footer": {
+    "description": "Enterprise-grade IT infrastructure solutions. Reliable servers, secure backups, and expert support for growing businesses.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "copyright": "© {{year}} Mesartim. All Rights Reserved."
+  },
+  "errors": {
+    "notFound": {
+      "title": "404",
+      "heading": "Page Not Found",
+      "message": "The page you're looking for doesn't exist or has been moved."
+    },
+    "error": {
+      "heading": "Something Went Wrong",
+      "message": "We encountered an unexpected error. Please try again."
+    }
   }
 }
