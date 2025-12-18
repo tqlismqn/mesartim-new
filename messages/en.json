@@ -11,7 +11,8 @@
     "menu": "Menu",
     "allRightsReserved": "All Rights Reserved",
     "requiredField": "*",
-    "optional": "optional"
+    "optional": "optional",
+    "whatsapp": "WhatsApp"
   },
   "navigation": {
     "accountingServer": "Accounting Server",

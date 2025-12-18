@@ -11,7 +11,8 @@
     "menu": "Menu",
     "allRightsReserved": "Všechna práva vyhrazena",
     "requiredField": "*",
-    "optional": "volitelné"
+    "optional": "volitelné",
+    "whatsapp": "WhatsApp"
   },
   "navigation": {
     "accountingServer": "Accounting Server",
