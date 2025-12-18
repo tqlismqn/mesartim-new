@@ -18,10 +18,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           'disabled:pointer-events-none disabled:opacity-50',
           // Variants
           {
-            'bg-gray-900 text-white hover:bg-black shadow-lg hover:shadow-xl': variant === 'primary',
-            'bg-primary text-white hover:bg-primary-700 shadow-md': variant === 'secondary',
-            'border-2 border-gray-300 bg-transparent hover:border-gray-900 hover:bg-gray-50': variant === 'outline',
-            'bg-transparent hover:bg-gray-100': variant === 'ghost',
+            'bg-primary text-white hover:bg-primary-700 shadow-md hover:shadow-lg': variant === 'primary',
+            'bg-gray-900 text-white hover:bg-gray-800 shadow-md hover:shadow-lg': variant === 'secondary',
+            'border-2 border-gray-300 bg-transparent text-gray-700 hover:border-gray-900 hover:bg-gray-50': variant === 'outline',
+            'bg-transparent text-gray-700 hover:bg-gray-100': variant === 'ghost',
           },
           // Sizes
           {
