@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 interface NavLink {
   href: string;
@@ -16,6 +18,7 @@ interface MobileMenuProps {
 
 export function MobileMenu({ links }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('common');
 
   // Body scroll lock
   useEffect(() => {
@@ -69,7 +72,7 @@ export function MobileMenu({ links }: MobileMenuProps) {
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b">
-            <span className="text-xl font-bold">Menu</span>
+            <span className="text-xl font-bold">{t('menu')}</span>
             <button
               onClick={() => setIsOpen(false)}
               className="p-2 min-h-[44px] min-w-[44px]"
@@ -93,11 +96,12 @@ export function MobileMenu({ links }: MobileMenuProps) {
             ))}
           </nav>
 
-          {/* Footer CTA */}
-          <div className="p-6 border-t">
+          {/* Language Switcher & Footer CTA */}
+          <div className="p-6 border-t space-y-4">
+            <LanguageSwitcher />
             <Link href="/contact" onClick={() => setIsOpen(false)}>
               <Button size="lg" className="w-full">
-                Contact Us
+                {t('contactUs')}
               </Button>
             </Link>
           </div>
