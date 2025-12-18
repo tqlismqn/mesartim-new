@@ -279,5 +279,18 @@
       "heading": "Etwas ist schiefgelaufen",
       "message": "Wir sind auf einen unerwarteten Fehler gestoßen. Bitte versuchen Sie es erneut."
     }
+  },
+  "forms": {
+    "consultation": {
+      "title": "Anfrage für Beratung hinterlassen",
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "phone": "Ihr Telefon",
+      "message": "Nachricht",
+      "submit": "Beratung erhalten",
+      "submitting": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen.",
+      "error": "Fehler beim Senden. Bitte versuchen Sie es erneut."
+    }
   }
 }

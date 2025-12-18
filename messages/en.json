@@ -279,5 +279,18 @@
       "heading": "Something Went Wrong",
       "message": "We encountered an unexpected error. Please try again."
     }
+  },
+  "forms": {
+    "consultation": {
+      "title": "Request a Consultation",
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone",
+      "message": "Message",
+      "submit": "Get Consultation",
+      "submitting": "Sending...",
+      "success": "Message sent successfully! We'll contact you soon.",
+      "error": "Error sending. Please try again."
+    }
   }
 }

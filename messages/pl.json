@@ -279,5 +279,18 @@
       "heading": "Coś poszło nie tak",
       "message": "Napotkaliśmy nieoczekiwany błąd. Spróbuj ponownie."
     }
+  },
+  "forms": {
+    "consultation": {
+      "title": "Zostaw zapytanie o konsultację",
+      "name": "Twoje imię",
+      "email": "Twój e-mail",
+      "phone": "Twój telefon",
+      "message": "Wiadomość",
+      "submit": "Otrzymaj konsultację",
+      "submitting": "Wysyłanie...",
+      "success": "Wiadomość wysłana pomyślnie! Wkrótce się z Tobą skontaktujemy.",
+      "error": "Błąd podczas wysyłania. Spróbuj ponownie."
+    }
   }
 }

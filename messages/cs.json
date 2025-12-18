@@ -279,5 +279,18 @@
       "heading": "Něco se pokazilo",
       "message": "Narazili jsme na neočekávanou chybu. Zkuste to prosím znovu."
     }
+  },
+  "forms": {
+    "consultation": {
+      "title": "Zanechte žádost o konzultaci",
+      "name": "Vaše jméno",
+      "email": "Váš e-mail",
+      "phone": "Váš telefon",
+      "message": "Zpráva",
+      "submit": "Získat konzultaci",
+      "submitting": "Odesílání...",
+      "success": "Zpráva úspěšně odeslána! Brzy vás kontaktujeme.",
+      "error": "Chyba při odesílání. Zkuste to prosím znovu."
+    }
   }
 }
