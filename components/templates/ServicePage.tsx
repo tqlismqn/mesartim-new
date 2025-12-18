@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Link from 'next/link';
+import { Link } from '@/lib/navigation';
 import { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';

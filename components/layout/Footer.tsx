@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/lib/navigation';
 import { Mail, Phone } from 'lucide-react';
 
 export function Footer() {

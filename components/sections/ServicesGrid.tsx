@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/lib/navigation';
 import { Server, Shield, Database, Globe } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
