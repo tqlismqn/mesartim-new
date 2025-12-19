@@ -24,7 +24,11 @@
     "aboutUs": "About Us",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "services": "Services"
+    "services": "Services",
+    "techSupport": "Technical Support",
+    "cloudSolutions": "Cloud Solutions",
+    "security": "Security",
+    "consulting": "Consulting"
   },
   "homepage": {
     "hero": {
@@ -267,7 +271,24 @@
     "description": "Enterprise-grade IT infrastructure solutions. Reliable servers, secure backups, and expert support for growing businesses.",
     "servicesTitle": "Services",
     "companyTitle": "Company",
-    "copyright": "© {{year}} Mesartim. All Rights Reserved."
+    "copyright": "© {year} Mesartim. All rights reserved.",
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "locations": "Locations",
+      "contact": "Contact"
+    },
+    "solutions": {
+      "title": "Solutions"
+    },
+    "products": {
+      "title": "Products"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "office": "Office in Czech Republic",
+      "datacenters": "Datacenters: Germany, Finland, CR"
+    }
   },
   "errors": {
     "notFound": {

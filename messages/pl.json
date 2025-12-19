@@ -24,7 +24,11 @@
     "aboutUs": "O nas",
     "privacyPolicy": "Polityka prywatności",
     "termsOfService": "Warunki usługi",
-    "services": "Usługi"
+    "services": "Usługi",
+    "techSupport": "Wsparcie techniczne",
+    "cloudSolutions": "Rozwiązania chmurowe",
+    "security": "Bezpieczeństwo",
+    "consulting": "Doradztwo"
   },
   "homepage": {
     "hero": {
@@ -267,7 +271,24 @@
     "description": "Rozwiązania infrastruktury IT na poziomie korporacyjnym. Niezawodne serwery, bezpieczne kopie zapasowe i eksperckie wsparcie dla rozwijających się firm.",
     "servicesTitle": "Usługi",
     "companyTitle": "Firma",
-    "copyright": "© {{year}} Mesartim. Wszelkie prawa zastrzeżone."
+    "copyright": "© {year} Mesartim. Wszelkie prawa zastrzeżone.",
+    "company": {
+      "title": "Firma",
+      "about": "O nas",
+      "locations": "Lokalizacje",
+      "contact": "Kontakt"
+    },
+    "solutions": {
+      "title": "Rozwiązania"
+    },
+    "products": {
+      "title": "Produkty"
+    },
+    "contacts": {
+      "title": "Kontakty",
+      "office": "Biuro w Czechach",
+      "datacenters": "Centra danych: Niemcy, Finlandia, CZ"
+    }
   },
   "errors": {
     "notFound": {

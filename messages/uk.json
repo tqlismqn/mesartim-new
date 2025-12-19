@@ -24,7 +24,11 @@
     "aboutUs": "Про нас",
     "privacyPolicy": "Політика конфіденційності",
     "termsOfService": "Умови обслуговування",
-    "services": "Послуги"
+    "services": "Послуги",
+    "techSupport": "Техпідтримка",
+    "cloudSolutions": "Хмарні рішення",
+    "security": "Безпека",
+    "consulting": "Консалтинг"
   },
   "homepage": {
     "hero": {
@@ -267,7 +271,24 @@
     "description": "ІТ-рішення для інфраструктури корпоративного рівня. Надійні сервери, безпечні резервні копії та експертна підтримка для компаній, що ростуть.",
     "servicesTitle": "Послуги",
     "companyTitle": "Компанія",
-    "copyright": "© {{year}} Mesartim. Всі права захищені."
+    "copyright": "© {year} Mesartim. Усі права захищені.",
+    "company": {
+      "title": "Компанія",
+      "about": "Про нас",
+      "locations": "Локації",
+      "contact": "Контакти"
+    },
+    "solutions": {
+      "title": "Рішення"
+    },
+    "products": {
+      "title": "Продукти"
+    },
+    "contacts": {
+      "title": "Контакти",
+      "office": "Офіс в Чехії",
+      "datacenters": "Дата-центри: Німеччина, Фінляндія, ЧР"
+    }
   },
   "errors": {
     "notFound": {

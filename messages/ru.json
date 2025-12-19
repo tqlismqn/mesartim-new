@@ -24,7 +24,11 @@
     "aboutUs": "О нас",
     "privacyPolicy": "Политика конфиденциальности",
     "termsOfService": "Условия обслуживания",
-    "services": "Услуги"
+    "services": "Услуги",
+    "techSupport": "Техподдержка",
+    "cloudSolutions": "Облачные решения",
+    "security": "Безопасность",
+    "consulting": "Консалтинг"
   },
   "homepage": {
     "hero": {
@@ -267,7 +271,24 @@
     "description": "ИТ-решения для инфраструктуры корпоративного уровня. Надежные серверы, безопасные резервные копии и экспертная поддержка для растущих компаний.",
     "servicesTitle": "Услуги",
     "companyTitle": "Компания",
-    "copyright": "© {{year}} Mesartim. Все права защищены."
+    "copyright": "© {year} Mesartim. Все права защищены.",
+    "company": {
+      "title": "Компания",
+      "about": "О нас",
+      "locations": "Локации",
+      "contact": "Контакты"
+    },
+    "solutions": {
+      "title": "Решения"
+    },
+    "products": {
+      "title": "Продукты"
+    },
+    "contacts": {
+      "title": "Контакты",
+      "office": "Офис в Чехии",
+      "datacenters": "Датацентры: Германия, Финляндия, ЧР"
+    }
   },
   "errors": {
     "notFound": {
