@@ -336,5 +336,92 @@
       "ctaDescription": "Kontaktujte nás pro individuální nabídku",
       "learnMore": "Zjistit více"
     }
+  },
+  "pages": {
+    "techSupport": {
+      "title": "Technická podpora",
+      "subtitle": "IT pomoc kdykoli ji potřebujete",
+      "description": "Profesionální podpora vašeho IT prostředí 24 hodin denně, 7 dní v týdnu. Rychlé řešení problémů, proaktivní monitoring a údržba infrastruktury.",
+      "features": {
+        "support247": {
+          "title": "Podpora 24/7",
+          "description": "Dostupní kdykoliv, i o víkendech a svátcích"
+        },
+        "fastResponse": {
+          "title": "Rychlá reakce",
+          "description": "Řešení kritických problémů do 1 hodiny"
+        },
+        "monitoring": {
+          "title": "Proaktivní monitoring",
+          "description": "Detekce problémů ještě před jejich vznikem"
+        },
+        "remoteManagement": {
+          "title": "Vzdálená správa",
+          "description": "Většinu problémů vyřešíme na dálku"
+        },
+        "maintenance": {
+          "title": "Údržba infrastruktury",
+          "description": "Pravidelné aktualizace a optimalizace"
+        },
+        "multilingual": {
+          "title": "Vícejazyčná podpora",
+          "description": "Čeština, ruština, angličtina"
+        }
+      },
+      "products": {
+        "itAssistant": {
+          "title": "IT Pomocník",
+          "description": "Osobní IT specialista pro váš byznys. Pomoc s PC, tiskárnami, Wi-Fi, zálohami.",
+          "priceFrom": "Od 690 Kč/měsíc"
+        },
+        "customProjects": {
+          "title": "Projekty na míru",
+          "description": "Komplexní IT řešení šité na míru vašim potřebám."
+        }
+      }
+    },
+    "cloudSolutions": {
+      "title": "Cloudová řešení",
+      "subtitle": "IT infrastruktura bez investic",
+      "description": "Přesuňte své servery a data do bezpečného cloudu. Žádné náklady na hardware, vysoká dostupnost, automatické zálohy.",
+      "features": {
+        "noHardware": {
+          "title": "Bez investic do hardwaru",
+          "description": "Žádné náklady na servery, chlazení, elektřinu"
+        },
+        "performance": {
+          "title": "Vysoký výkon",
+          "description": "Moderní SSD disky, výkonné procesory"
+        },
+        "security": {
+          "title": "Bezpečné datacentry",
+          "description": "Evropská lokace (DE, FI, CZ), GDPR compliant"
+        },
+        "access": {
+          "title": "Přístup odkudkoliv",
+          "description": "Práce z domova, kanceláře nebo na cestách"
+        },
+        "backup": {
+          "title": "Automatické zálohy",
+          "description": "Denní zálohování dat do oddělených lokalit"
+        },
+        "scaling": {
+          "title": "Snadné škálování",
+          "description": "Zvýšení výkonu během několika minut"
+        }
+      },
+      "products": {
+        "accountingServer": {
+          "title": "Účetní Server",
+          "description": "Cloudový server pro Pohoda, Money S3, Helios. Přístup odkudkoliv, bez instalace.",
+          "priceFrom": "Od 890 Kč/měsíc"
+        },
+        "accountingBox": {
+          "title": "Účetní Box",
+          "description": "1 TB šifrovaného úložiště pro sdílení dokumentů s klienty.",
+          "priceFrom": "Od 490 Kč/měsíc"
+        }
+      }
+    }
   }
 }
