@@ -465,6 +465,43 @@
           "priceFrom": "Od 690 Kč/měsíc"
         }
       }
+    },
+    "consulting": {
+      "title": "IT Poradenství",
+      "subtitle": "Najdeme optimální řešení pro váš byznys",
+      "description": "Pomůžeme vám vybrat správné technologie, snížit náklady a zvýšit efektivitu IT.",
+      "features": {
+        "analysis": {
+          "title": "Analýza potřeb",
+          "description": "Pochopíme vaše procesy a cíle"
+        },
+        "solution": {
+          "title": "Návrh řešení",
+          "description": "Optimální technologie a architektura"
+        },
+        "costReduction": {
+          "title": "Snížení nákladů",
+          "description": "Identifikace úspor a optimalizace"
+        },
+        "migration": {
+          "title": "Migrace do cloudu",
+          "description": "Bezpečný přesun dat a aplikací"
+        },
+        "automation": {
+          "title": "Automatizace procesů",
+          "description": "Zvýšení produktivity týmu"
+        },
+        "training": {
+          "title": "Školení týmu",
+          "description": "Efektivní využití nových nástrojů"
+        }
+      },
+      "products": {
+        "customProjects": {
+          "title": "Projekty na míru",
+          "description": "Komplexní IT projekty od návrhu po implementaci."
+        }
+      }
     }
   }
 }
