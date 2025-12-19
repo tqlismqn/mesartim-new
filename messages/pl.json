@@ -60,6 +60,95 @@
       "title": "Gotowy na upgrade?",
       "subtitle": "Dołącz do setek zadowolonych firm korzystających z naszej infrastruktury.",
       "button": "Skontaktuj się z działem sprzedaży"
+    },
+    "problems": {
+      "title": "We Solve Your IT Challenges",
+      "subtitle": "9 common challenges for small and medium businesses",
+      "list": {
+        "highCosts": {
+          "title": "High IT Infrastructure Costs",
+          "description": "Purchasing servers, licenses, hardware"
+        },
+        "dataLoss": {
+          "title": "Risk of Data Loss",
+          "description": "No backups, disk failures, ransomware"
+        },
+        "slowSoftware": {
+          "title": "Slow Accounting Software",
+          "description": "Pohoda/Money slows down on weak PCs"
+        },
+        "noRemoteAccess": {
+          "title": "No Remote Data Access",
+          "description": "Work only from office"
+        },
+        "slowSupport": {
+          "title": "Incompetent IT Admin or No Specialist",
+          "description": "Problems solved slowly"
+        },
+        "documentSharing": {
+          "title": "Complex Document Sharing",
+          "description": "Email, flash drives - insecure"
+        },
+        "outdatedPC": {
+          "title": "Outdated PCs Without Protection",
+          "description": "Windows 10 without BitLocker"
+        },
+        "noScaling": {
+          "title": "No Scalability",
+          "description": "New employee = buy new PC + licenses"
+        },
+        "noSupport24": {
+          "title": "No 24/7 Support",
+          "description": "Problem at night/weekend = downtime"
+        }
+      }
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "8 ways to optimize your IT",
+      "list": {
+        "techSupport": {
+          "title": "Technical Support",
+          "description": "Immediate response 24/7"
+        },
+        "outsourcing": {
+          "title": "IT Outsourcing",
+          "description": "Complete IT management turnkey"
+        },
+        "security": {
+          "title": "Data Security",
+          "description": "Security audit, encryption, backups"
+        },
+        "consulting": {
+          "title": "IT Consulting",
+          "description": "Optimal platform design"
+        },
+        "cloudServices": {
+          "title": "Cloud Services",
+          "description": "Servers without hardware investments"
+        },
+        "backup": {
+          "title": "Data Backup",
+          "description": "Automatic daily backups"
+        },
+        "migration": {
+          "title": "Cloud Migration",
+          "description": "Moving to cloud infrastructure"
+        },
+        "automation": {
+          "title": "Automation",
+          "description": "Process optimization, monitoring"
+        }
+      }
+    },
+    "trust": {
+      "title": "Why Mesartim",
+      "datacenters": "European Datacenters",
+      "datacentersDesc": "Germany, Finland, Czech Republic",
+      "support": "24/7 Support",
+      "supportDesc": "Monitoring and rapid response",
+      "expertise": "IT Expertise",
+      "expertiseDesc": "Specialization in accounting systems"
     }
   },
   "accountingServer": {

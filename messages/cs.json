@@ -74,6 +74,86 @@
       "supportDesc": "Monitoring a rychlá reakce na problémy",
       "expertise": "IT expertiza",
       "expertiseDesc": "Specializace na účetní systémy a cloudová řešení"
+    },
+    "problems": {
+      "title": "Řešíme vaše IT problémy",
+      "subtitle": "9 nejčastějších výzev malých a středních firem",
+      "list": {
+        "highCosts": {
+          "title": "Vysoké náklady na IT infrastrukturu",
+          "description": "Nákup serverů, licencí, hardwaru"
+        },
+        "dataLoss": {
+          "title": "Riziko ztráty dat",
+          "description": "Chybí zálohy, selhání disků, ransomware"
+        },
+        "slowSoftware": {
+          "title": "Pomalá účetní software",
+          "description": "Pohoda/Money zpomaluje na slabém PC"
+        },
+        "noRemoteAccess": {
+          "title": "Žádný vzdálený přístup k datům",
+          "description": "Práce pouze z kanceláře, ne z domova/na cestách"
+        },
+        "slowSupport": {
+          "title": "Nekompetentní IT admin nebo žádný IT specialista",
+          "description": "Problémy se řeší pomalu, čekáme týdny"
+        },
+        "documentSharing": {
+          "title": "Složité sdílení dokumentů s klienty",
+          "description": "E-mail, flash disky - nepohodlné a nebezpečné"
+        },
+        "outdatedPC": {
+          "title": "Zastaralé PC bez ochrany dat",
+          "description": "Windows 10 bez BitLocker, riziko úniku důvěrných informací"
+        },
+        "noScaling": {
+          "title": "Nemožnost škálování",
+          "description": "Nový zaměstnanec = koupit nový PC + licence"
+        },
+        "noSupport24": {
+          "title": "Chybí technická podpora 24/7",
+          "description": "Problém v noci/o víkendu = prostoj"
+        }
+      }
+    },
+    "solutions": {
+      "title": "Naše řešení",
+      "subtitle": "8 způsobů, jak optimalizovat vaše IT",
+      "list": {
+        "techSupport": {
+          "title": "Technická podpora",
+          "description": "Okamžitá reakce na vaše IT problémy 24/7"
+        },
+        "outsourcing": {
+          "title": "IT Outsourcing",
+          "description": "Kompletní správa IT infrastruktury na klíč"
+        },
+        "security": {
+          "title": "Bezpečnost dat",
+          "description": "Audit bezpečnosti, šifrování, zálohy"
+        },
+        "consulting": {
+          "title": "IT Poradenství",
+          "description": "Návrh optimální platformy a software řešení"
+        },
+        "cloudServices": {
+          "title": "Cloudové služby",
+          "description": "Servery v cloudu bez investic do hardwaru"
+        },
+        "backup": {
+          "title": "Zálohování dat",
+          "description": "Automatické denní zálohy do bezpečných datacenter"
+        },
+        "migration": {
+          "title": "Migrace do cloudu",
+          "description": "Přesun dat a aplikací na cloudovou infrastrukturu"
+        },
+        "automation": {
+          "title": "Automatizace",
+          "description": "Zefektivnění procesů, virtualizace, monitoring"
+        }
+      }
     }
   },
   "accountingServer": {
