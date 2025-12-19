@@ -422,6 +422,49 @@
           "priceFrom": "Od 490 Kč/měsíc"
         }
       }
+    },
+    "security": {
+      "title": "Zabezpečení IT",
+      "subtitle": "Ochrana vašich dat na první místě",
+      "description": "Komplexní bezpečnostní řešení pro váš byznys. Šifrování, zálohy, audit, monitoring hrozeb.",
+      "features": {
+        "encryption": {
+          "title": "Šifrování dat",
+          "description": "BitLocker, SSL/TLS, end-to-end encryption"
+        },
+        "ransomwareProtection": {
+          "title": "Ochrana před ransomware",
+          "description": "Pravidelné zálohy, antivirus, firewall"
+        },
+        "accessManagement": {
+          "title": "Správa přístupů",
+          "description": "Dvoufaktorová autentizace, SSO"
+        },
+        "securityAudit": {
+          "title": "Audit bezpečnosti",
+          "description": "Pravidelné kontroly a doporučení"
+        },
+        "threatMonitoring": {
+          "title": "Monitoring hrozeb",
+          "description": "24/7 sledování bezpečnostních incidentů"
+        },
+        "gdprCompliance": {
+          "title": "GDPR compliance",
+          "description": "Soulad s evropskými předpisy"
+        }
+      },
+      "products": {
+        "accountingBox": {
+          "title": "Účetní Box",
+          "description": "Šifrované úložiště pro citlivé finanční dokumenty.",
+          "priceFrom": "Od 490 Kč/měsíc"
+        },
+        "itAssistant": {
+          "title": "IT Pomocník",
+          "description": "Nastavení BitLocker, antiviru, firewallu na vašich zařízeních.",
+          "priceFrom": "Od 690 Kč/měsíc"
+        }
+      }
     }
   }
 }
