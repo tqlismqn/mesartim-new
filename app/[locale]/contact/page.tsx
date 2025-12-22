@@ -1,5 +1,6 @@
 import { Mail, Phone, Clock } from 'lucide-react';
 import { ContactForm } from '@/components/forms/ContactForm';
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,7 +8,14 @@ export const metadata: Metadata = {
   description: 'Get in touch with Mesartim. We\'re here to help with your IT infrastructure needs.',
 };
 
-export default function ContactPage() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div>
       {/* Hero */}
@@ -17,7 +25,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about our services? We're here to help. Send us a message or give us a call.
+            Have questions about our services? We&apos;re here to help. Send us a message or give us a call.
           </p>
         </div>
       </section>

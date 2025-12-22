@@ -54,7 +54,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['system-ui', '-apple-system', 'sans-serif'],
       },
       fontSize: {
         'hero': 'clamp(2rem, 5vw, 5rem)',

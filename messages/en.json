@@ -15,26 +15,61 @@
     "whatsapp": "WhatsApp"
   },
   "navigation": {
+    "home": "Home",
     "accountingServer": "Accounting Server",
+    "accountingServerDesc": "Remote desktop servers for Pohoda",
     "cloudBackup": "Cloud Backup",
+    "cloudBackupDesc": "Automated encrypted backups",
     "itSupport": "IT Support",
+    "itSupportDesc": "24/7 monitoring and support",
     "projects": "Projects",
+    "projectsDesc": "Custom IT solutions for your business",
     "customProjects": "Custom Projects",
     "contact": "Contact",
     "aboutUs": "About Us",
+    "about": "About",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "services": "Services",
+    "solutions": "Solutions",
+    "products": "Products",
     "techSupport": "Technical Support",
+    "techSupportDesc": "Expert help when you need it",
     "cloudSolutions": "Cloud Solutions",
+    "cloudSolutionsDesc": "Enterprise cloud infrastructure",
     "security": "Security",
-    "consulting": "Consulting"
+    "securityDesc": "Protect your data and systems",
+    "consulting": "Consulting",
+    "consultingDesc": "IT strategy and optimization"
   },
   "homepage": {
     "hero": {
-      "headline": "Reliable IT Infrastructure.",
-      "headlineAccent": "Simplified.",
-      "subheadline": "Enterprise-grade server solutions, secure backups, and expert support. Designed to grow your business."
+      "badge": "Enterprise IT Solutions",
+      "headline": "Transform Your",
+      "headlineAccent": "Digital Infrastructure",
+      "subheadline": "Empower your business with cutting-edge cloud solutions, robust security, and 24/7 expert support. We deliver enterprise-grade IT services tailored to your needs.",
+      "features": {
+        "cloud": "Cloud Solutions",
+        "cloudDesc": "Scalable infrastructure",
+        "security": "Security First",
+        "securityDesc": "Enterprise-grade protection",
+        "data": "Data Management",
+        "dataDesc": "Intelligent data handling",
+        "network": "Network Optimization",
+        "networkDesc": "High-speed connectivity",
+        "server": "Server Management",
+        "serverDesc": "24/7 monitoring",
+        "performance": "Performance",
+        "performanceDesc": "Lightning-fast response"
+      },
+      "stats": {
+        "uptime": "99.9%",
+        "uptimeLabel": "Uptime SLA",
+        "support": "24/7",
+        "supportLabel": "Support",
+        "clients": "500+",
+        "clientsLabel": "Clients"
+      }
     },
     "servicesSection": {
       "title": "Everything You Need.",
@@ -59,7 +94,12 @@
     "cta": {
       "title": "Ready to Upgrade?",
       "subtitle": "Join hundreds of satisfied businesses using our infrastructure.",
-      "button": "Contact Sales"
+      "button": "Contact Sales",
+      "benefits": {
+        "freeConsultation": "Free Consultation",
+        "quickResponse": "Response within 24 hours",
+        "customSolution": "Tailored Solution"
+      }
     },
     "problems": {
       "title": "We Solve Your IT Challenges",
@@ -377,6 +417,10 @@
       "title": "Contacts",
       "office": "Office in Czech Republic",
       "datacenters": "Datacenters: Germany, Finland, CR"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
     }
   },
   "errors": {
@@ -401,6 +445,182 @@
       "submitting": "Sending...",
       "success": "Message sent successfully! We'll contact you soon.",
       "error": "Error sending. Please try again."
+    }
+  },
+  "pages": {
+    "consulting": {
+      "title": "IT Consulting",
+      "subtitle": "Strategic Technology Guidance",
+      "description": "Expert consulting to optimize your IT infrastructure, reduce costs, and drive business growth through technology.",
+      "features": {
+        "analysis": {
+          "title": "IT Audit & Analysis",
+          "description": "Comprehensive assessment of your current infrastructure and recommendations for improvement."
+        },
+        "solution": {
+          "title": "Solution Design",
+          "description": "Custom technology solutions tailored to your business needs and budget."
+        },
+        "costReduction": {
+          "title": "Cost Optimization",
+          "description": "Identify and eliminate wasteful spending while improving performance."
+        },
+        "migration": {
+          "title": "Cloud Migration",
+          "description": "Seamless transition to cloud infrastructure with minimal downtime."
+        },
+        "automation": {
+          "title": "Process Automation",
+          "description": "Automate repetitive tasks to increase efficiency and reduce errors."
+        },
+        "training": {
+          "title": "Team Training",
+          "description": "Empower your team with the knowledge to use new technologies effectively."
+        }
+      },
+      "products": {
+        "customProjects": {
+          "title": "Custom Projects",
+          "description": "Tailored solutions for unique business challenges."
+        }
+      }
+    },
+    "techSupport": {
+      "title": "Technical Support",
+      "subtitle": "Expert Help When You Need It",
+      "description": "Professional IT support services with rapid response times and proactive monitoring to keep your business running smoothly.",
+      "features": {
+        "support247": {
+          "title": "24/7 Support",
+          "description": "Round-the-clock assistance for critical issues, any time of day or night."
+        },
+        "fastResponse": {
+          "title": "Fast Response",
+          "description": "Average response time under 15 minutes for urgent issues."
+        },
+        "monitoring": {
+          "title": "Proactive Monitoring",
+          "description": "Continuous system monitoring to detect and prevent issues before they occur."
+        },
+        "remoteManagement": {
+          "title": "Remote Management",
+          "description": "Secure remote access to resolve issues quickly without on-site visits."
+        },
+        "maintenance": {
+          "title": "Regular Maintenance",
+          "description": "Scheduled updates, patches, and system optimization."
+        },
+        "multilingual": {
+          "title": "Multilingual Support",
+          "description": "Support available in Czech, English, Russian, Ukrainian, German, and Polish."
+        }
+      },
+      "products": {
+        "itAssistant": {
+          "title": "IT Assistant",
+          "description": "Dedicated IT support specialist for your business.",
+          "priceFrom": "From €299/month"
+        },
+        "customProjects": {
+          "title": "Custom Solutions",
+          "description": "Tailored support packages for unique requirements."
+        }
+      }
+    },
+    "cloudSolutions": {
+      "title": "Cloud Solutions",
+      "subtitle": "Modern Infrastructure for Modern Business",
+      "description": "Enterprise-grade cloud infrastructure that scales with your business. No hardware investments, no maintenance headaches.",
+      "features": {
+        "noHardware": {
+          "title": "No Hardware Investment",
+          "description": "Eliminate expensive server purchases and maintenance costs."
+        },
+        "performance": {
+          "title": "High Performance",
+          "description": "Enterprise-grade servers with SSD storage and dedicated resources."
+        },
+        "security": {
+          "title": "Enterprise Security",
+          "description": "Bank-level encryption, firewalls, and security monitoring."
+        },
+        "access": {
+          "title": "Global Access",
+          "description": "Access your systems securely from anywhere in the world."
+        },
+        "backup": {
+          "title": "Automated Backups",
+          "description": "Daily backups with point-in-time recovery options."
+        },
+        "scaling": {
+          "title": "Instant Scaling",
+          "description": "Add resources on demand as your business grows."
+        }
+      },
+      "products": {
+        "accountingServer": {
+          "title": "Accounting Server",
+          "description": "Cloud servers optimized for Pohoda and other accounting software.",
+          "priceFrom": "From €49/month"
+        },
+        "accountingBox": {
+          "title": "Cloud Backup",
+          "description": "Automated encrypted backups for your critical data.",
+          "priceFrom": "From €19/month"
+        }
+      }
+    },
+    "security": {
+      "title": "IT Security",
+      "subtitle": "Protect Your Business Data",
+      "description": "Comprehensive security solutions to protect your business from cyber threats, data breaches, and compliance issues.",
+      "features": {
+        "encryption": {
+          "title": "Data Encryption",
+          "description": "AES-256 encryption for data at rest and in transit."
+        },
+        "ransomwareProtection": {
+          "title": "Ransomware Protection",
+          "description": "Advanced threat detection and prevention against ransomware attacks."
+        },
+        "accessManagement": {
+          "title": "Access Management",
+          "description": "Role-based access control and multi-factor authentication."
+        },
+        "securityAudit": {
+          "title": "Security Audit",
+          "description": "Regular vulnerability assessments and penetration testing."
+        },
+        "threatMonitoring": {
+          "title": "Threat Monitoring",
+          "description": "24/7 monitoring for suspicious activity and potential breaches."
+        },
+        "gdprCompliance": {
+          "title": "GDPR Compliance",
+          "description": "Ensure your data handling meets European privacy regulations."
+        }
+      },
+      "products": {
+        "accountingBox": {
+          "title": "Secure Backup",
+          "description": "Encrypted cloud backups with ransomware protection.",
+          "priceFrom": "From €19/month"
+        },
+        "itAssistant": {
+          "title": "Security Monitoring",
+          "description": "Continuous security monitoring and incident response.",
+          "priceFrom": "From €199/month"
+        }
+      }
+    }
+  },
+  "templates": {
+    "categoryPage": {
+      "featuresTitle": "What We Offer",
+      "productsTitle": "Our Solutions",
+      "learnMore": "Learn More",
+      "ctaTitle": "Ready to Get Started?",
+      "ctaDescription": "Contact us today for a free consultation. Our experts will help you find the best solution for your needs."
     }
   }
 }

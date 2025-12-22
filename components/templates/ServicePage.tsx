@@ -1,11 +1,59 @@
 import { ReactNode } from 'react';
-import { Link } from '@/lib/navigation';
-import { LucideIcon } from 'lucide-react';
+import Link from 'next/link';
+import {
+  LucideIcon,
+  Database,
+  Shield,
+  Clock,
+  FolderSync,
+  CheckCircle,
+  HardDrive,
+  Server,
+  Cloud,
+  Lock,
+  Zap,
+  Globe,
+  Code,
+  Network,
+  Puzzle,
+  Lightbulb,
+  Rocket,
+  Headphones,
+  Wrench,
+  AlertCircle,
+  TrendingUp,
+  Cpu
+} from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
+// Icon mapping for string-based icon references
+const iconMap: Record<string, LucideIcon> = {
+  Database,
+  Shield,
+  Clock,
+  FolderSync,
+  CheckCircle,
+  HardDrive,
+  Server,
+  Cloud,
+  Lock,
+  Zap,
+  Globe,
+  Code,
+  Network,
+  Puzzle,
+  Lightbulb,
+  Rocket,
+  Headphones,
+  Wrench,
+  AlertCircle,
+  TrendingUp,
+  Cpu
+};
+
 interface Feature {
-  icon: LucideIcon;
+  icon: string;
   title: string;
   description: string;
 }
@@ -15,7 +63,7 @@ interface ServicePageProps {
   subtitle: string;
   description: string;
   features: Feature[];
-  icon: LucideIcon;
+  icon: string;
   iconBg: string;
   iconColor: string;
   children?: ReactNode;
@@ -26,11 +74,12 @@ export function ServicePage({
   subtitle,
   description,
   features,
-  icon: Icon,
+  icon,
   iconBg,
   iconColor,
   children,
 }: ServicePageProps) {
+  const Icon = iconMap[icon] || Database;
   return (
     <div>
       {/* Hero */}
@@ -68,7 +117,7 @@ export function ServicePage({
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {features.map((feature, idx) => {
-              const FeatureIcon = feature.icon;
+              const FeatureIcon = iconMap[feature.icon] || Database;
               return (
                 <div key={idx} className="text-center space-y-4">
                   <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto">

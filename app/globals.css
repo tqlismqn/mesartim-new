@@ -17,7 +17,7 @@
   --color-gray-950: #030712;
 
   /* Font family */
-  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, sans-serif;
 
   /* Font sizes */
   --font-size-hero: clamp(2rem, 5vw, 5rem);

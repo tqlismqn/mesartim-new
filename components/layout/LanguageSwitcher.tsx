@@ -5,6 +5,7 @@ import { useRouter, usePathname } from '@/lib/navigation';
 import { locales, type Locale } from '@/i18n';
 import { Globe } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+import { cn } from '@/lib/utils';
 
 const localeNames: Record<Locale, string> = {
   cs: 'Čeština',
@@ -15,7 +16,11 @@ const localeNames: Record<Locale, string> = {
   pl: 'Polski',
 };
 
-export function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  variant?: 'light' | 'dark';
+}
+
+export function LanguageSwitcher({ variant = 'light' }: LanguageSwitcherProps) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -74,7 +79,12 @@ export function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-colors min-h-[44px]"
+        className={cn(
+          'flex items-center gap-2 px-3 py-2 rounded-lg transition-colors min-h-[44px]',
+          variant === 'light'
+            ? 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+            : 'text-white/80 hover:text-white hover:bg-white/10'
+        )}
         aria-label="Select language"
         aria-expanded={isOpen}
         aria-haspopup="true"
@@ -82,7 +92,7 @@ export function LanguageSwitcher() {
         <Globe size={20} />
         <span className="hidden sm:inline font-medium">{localeNames[locale as Locale]}</span>
         <svg
-          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={cn('w-4 h-4 transition-transform', isOpen && 'rotate-180')}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

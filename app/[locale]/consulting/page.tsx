@@ -1,40 +1,52 @@
-'use client';
-
-import { Lightbulb, TrendingDown, Rocket, Workflow, Target, Users } from 'lucide-react';
 import { CategoryPage } from '@/components/templates/CategoryPage';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export default function ConsultingPage() {
-  const t = useTranslations('pages.consulting');
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function ConsultingPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('pages.consulting');
+  const tTemplate = await getTranslations('templates.categoryPage');
+
+  const labels = {
+    featuresTitle: tTemplate('featuresTitle'),
+    productsTitle: tTemplate('productsTitle'),
+    learnMore: tTemplate('learnMore'),
+    ctaTitle: tTemplate('ctaTitle'),
+    ctaDescription: tTemplate('ctaDescription'),
+  };
 
   const features = [
     {
-      icon: Target,
+      icon: 'Target',
       title: t('features.analysis.title'),
       description: t('features.analysis.description')
     },
     {
-      icon: Lightbulb,
+      icon: 'Lightbulb',
       title: t('features.solution.title'),
       description: t('features.solution.description')
     },
     {
-      icon: TrendingDown,
+      icon: 'TrendingDown',
       title: t('features.costReduction.title'),
       description: t('features.costReduction.description')
     },
     {
-      icon: Rocket,
+      icon: 'Rocket',
       title: t('features.migration.title'),
       description: t('features.migration.description')
     },
     {
-      icon: Workflow,
+      icon: 'Workflow',
       title: t('features.automation.title'),
       description: t('features.automation.description')
     },
     {
-      icon: Users,
+      icon: 'Users',
       title: t('features.training.title'),
       description: t('features.training.description')
     }
@@ -45,7 +57,7 @@ export default function ConsultingPage() {
       title: t('products.customProjects.title'),
       description: t('products.customProjects.description'),
       href: '/custom-projects',
-      icon: Lightbulb
+      icon: 'Lightbulb'
     }
   ];
 
@@ -54,11 +66,12 @@ export default function ConsultingPage() {
       title={t('title')}
       subtitle={t('subtitle')}
       description={t('description')}
-      icon={Lightbulb}
+      icon="Lightbulb"
       iconBg="bg-amber-100"
       iconColor="text-amber-600"
       features={features}
       products={products}
+      labels={labels}
     />
   );
 }

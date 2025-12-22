@@ -15,26 +15,61 @@
     "whatsapp": "WhatsApp"
   },
   "navigation": {
+    "home": "Startseite",
     "accountingServer": "Accounting Server",
+    "accountingServerDesc": "Remote-Desktop-Server für Pohoda",
     "cloudBackup": "Cloud Backup",
+    "cloudBackupDesc": "Automatische verschlüsselte Backups",
     "itSupport": "IT-Support",
+    "itSupportDesc": "24/7 Überwachung und Support",
     "projects": "Projekte",
+    "projectsDesc": "Individuelle IT-Lösungen für Ihr Unternehmen",
     "customProjects": "Individuelle Projekte",
     "contact": "Kontakt",
     "aboutUs": "Über uns",
+    "about": "Über uns",
     "privacyPolicy": "Datenschutzerklärung",
     "termsOfService": "Geschäftsbedingungen",
     "services": "Dienstleistungen",
+    "solutions": "Lösungen",
+    "products": "Produkte",
     "techSupport": "Technischer Support",
+    "techSupportDesc": "Expertenhilfe, wenn Sie sie brauchen",
     "cloudSolutions": "Cloud-Lösungen",
+    "cloudSolutionsDesc": "Enterprise-Cloud-Infrastruktur",
     "security": "Sicherheit",
-    "consulting": "Beratung"
+    "securityDesc": "Schützen Sie Ihre Daten und Systeme",
+    "consulting": "Beratung",
+    "consultingDesc": "IT-Strategie und Optimierung"
   },
   "homepage": {
     "hero": {
-      "headline": "Zuverlässige IT-Infrastruktur.",
-      "headlineAccent": "Vereinfacht.",
-      "subheadline": "Serverlösungen auf Unternehmensniveau, sichere Backups und Expertenunterstützung. Entwickelt für das Wachstum Ihres Unternehmens."
+      "badge": "Enterprise IT-Lösungen",
+      "headline": "Transformieren Sie Ihre",
+      "headlineAccent": "digitale Infrastruktur",
+      "subheadline": "Stärken Sie Ihr Unternehmen mit modernsten Cloud-Lösungen, robuster Sicherheit und 24/7-Expertenunterstützung. Wir liefern IT-Dienste auf Unternehmensniveau, die auf Ihre Bedürfnisse zugeschnitten sind.",
+      "features": {
+        "cloud": "Cloud-Lösungen",
+        "cloudDesc": "Skalierbare Infrastruktur",
+        "security": "Sicherheit zuerst",
+        "securityDesc": "Enterprise-Grade Schutz",
+        "data": "Datenmanagement",
+        "dataDesc": "Intelligente Datenverarbeitung",
+        "network": "Netzwerkoptimierung",
+        "networkDesc": "Hochgeschwindigkeitsverbindung",
+        "server": "Servermanagement",
+        "serverDesc": "24/7 Überwachung",
+        "performance": "Leistung",
+        "performanceDesc": "Blitzschnelle Reaktion"
+      },
+      "stats": {
+        "uptime": "99.9%",
+        "uptimeLabel": "Verfügbarkeits-SLA",
+        "support": "24/7",
+        "supportLabel": "Support",
+        "clients": "500+",
+        "clientsLabel": "Kunden"
+      }
     },
     "servicesSection": {
       "title": "Alles, was Sie brauchen.",
@@ -59,7 +94,12 @@
     "cta": {
       "title": "Bereit für ein Upgrade?",
       "subtitle": "Schließen Sie sich Hunderten zufriedener Unternehmen an, die unsere Infrastruktur nutzen.",
-      "button": "Vertrieb kontaktieren"
+      "button": "Vertrieb kontaktieren",
+      "benefits": {
+        "freeConsultation": "Kostenlose Beratung",
+        "quickResponse": "Antwort innerhalb von 24 Stunden",
+        "customSolution": "Maßgeschneiderte Lösung"
+      }
     },
     "problems": {
       "title": "We Solve Your IT Challenges",
@@ -377,6 +417,10 @@
       "title": "Kontakte",
       "office": "Büro in Tschechien",
       "datacenters": "Rechenzentren: Deutschland, Finnland, TR"
+    },
+    "legal": {
+      "privacy": "Datenschutzerklärung",
+      "terms": "Geschäftsbedingungen"
     }
   },
   "errors": {

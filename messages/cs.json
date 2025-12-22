@@ -15,26 +15,61 @@
     "whatsapp": "WhatsApp"
   },
   "navigation": {
+    "home": "Domů",
     "accountingServer": "Accounting Server",
+    "accountingServerDesc": "Servery vzdálené plochy pro Pohodu",
     "cloudBackup": "Cloud Backup",
+    "cloudBackupDesc": "Automatické šifrované zálohy",
     "itSupport": "IT Podpora",
+    "itSupportDesc": "Monitoring a podpora 24/7",
     "projects": "Projekty",
+    "projectsDesc": "Zakázková IT řešení pro vaši firmu",
     "customProjects": "Zakázkové projekty",
     "contact": "Kontakt",
     "aboutUs": "O nás",
+    "about": "O nás",
     "privacyPolicy": "Ochrana osobních údajů",
     "termsOfService": "Obchodní podmínky",
     "services": "Služby",
+    "solutions": "Řešení",
+    "products": "Produkty",
     "techSupport": "Technická podpora",
+    "techSupportDesc": "Odborná pomoc, když ji potřebujete",
     "cloudSolutions": "Cloudová řešení",
+    "cloudSolutionsDesc": "Podniková cloudová infrastruktura",
     "security": "Bezpečnost",
-    "consulting": "Poradenství"
+    "securityDesc": "Chraňte svá data a systémy",
+    "consulting": "Poradenství",
+    "consultingDesc": "IT strategie a optimalizace"
   },
   "homepage": {
     "hero": {
-      "headline": "Spolehlivá IT infrastruktura.",
-      "headlineAccent": "Zjednodušená.",
-      "subheadline": "Serverová řešení na podnikové úrovni, zabezpečené zálohy a odborná podpora. Navrženo pro růst vašeho podnikání."
+      "badge": "Podniková IT řešení",
+      "headline": "Transformujte svou",
+      "headlineAccent": "digitální infrastrukturu",
+      "subheadline": "Posilte své podnikání špičkovými cloudovými řešeními, robustním zabezpečením a nepřetržitou odbornou podporou. Dodáváme IT služby na podnikové úrovni přizpůsobené vašim potřebám.",
+      "features": {
+        "cloud": "Cloudová řešení",
+        "cloudDesc": "Škálovatelná infrastruktura",
+        "security": "Bezpečnost především",
+        "securityDesc": "Ochrana na podnikové úrovni",
+        "data": "Správa dat",
+        "dataDesc": "Inteligentní zpracování dat",
+        "network": "Optimalizace sítě",
+        "networkDesc": "Vysokorychlostní připojení",
+        "server": "Správa serverů",
+        "serverDesc": "Monitoring 24/7",
+        "performance": "Výkon",
+        "performanceDesc": "Bleskově rychlá odezva"
+      },
+      "stats": {
+        "uptime": "99.9%",
+        "uptimeLabel": "Dostupnost SLA",
+        "support": "24/7",
+        "supportLabel": "Podpora",
+        "clients": "500+",
+        "clientsLabel": "Klientů"
+      }
     },
     "servicesSection": {
       "title": "Vše, co potřebujete.",
@@ -382,6 +417,10 @@
       "title": "Kontakty",
       "office": "Kancelář v České republice",
       "datacenters": "Datacentra: Německo, Finsko, ČR"
+    },
+    "legal": {
+      "privacy": "Ochrana osobních údajů",
+      "terms": "Obchodní podmínky"
     }
   },
   "errors": {

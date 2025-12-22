@@ -1,120 +1,162 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { Link } from '@/lib/navigation';
 import { Mail, Phone, MapPin } from 'lucide-react';
+
+// Social Icons as inline SVGs
+const FacebookIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+  </svg>
+);
+
+const LinkedInIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+  </svg>
+);
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+  </svg>
+);
+
+const TwitterIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 export function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('navigation');
+  const tCommon = useTranslations('common');
   const currentYear = new Date().getFullYear();
 
-  const solutions = [
-    { href: '/tech-support', label: tNav('techSupport') },
-    { href: '/cloud-solutions', label: tNav('cloudSolutions') },
-    { href: '/security', label: tNav('security') },
-    { href: '/consulting', label: tNav('consulting') },
+  const sections = [
+    {
+      title: t('solutions.title'),
+      links: [
+        { href: '/tech-support', label: tNav('techSupport') },
+        { href: '/cloud-solutions', label: tNav('cloudSolutions') },
+        { href: '/security', label: tNav('security') },
+        { href: '/consulting', label: tNav('consulting') },
+      ],
+    },
+    {
+      title: t('products.title'),
+      links: [
+        { href: '/accounting-server', label: tNav('accountingServer') },
+        { href: '/accounting-box', label: tNav('cloudBackup') },
+        { href: '/it-support', label: tNav('itSupport') },
+        { href: '/projects', label: tNav('projects') },
+      ],
+    },
+    {
+      title: t('company.title'),
+      links: [
+        { href: '/about', label: t('company.about') },
+        { href: '/contact', label: t('company.contact') },
+      ],
+    },
   ];
 
-  const products = [
-    { href: '/accounting-server', label: tNav('accountingServer') },
-    { href: '/accounting-box', label: tNav('cloudBackup') },
-    { href: '/it-assistant', label: tNav('itSupport') },
-    { href: '/custom-projects', label: tNav('customProjects') },
+  const socialLinks = [
+    { icon: LinkedInIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FacebookIcon, href: 'https://facebook.com', label: 'Facebook' },
+    { icon: InstagramIcon, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: TwitterIcon, href: 'https://twitter.com', label: 'X (Twitter)' },
   ];
 
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="container-custom py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          {/* Column 1: Company */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('company.title')}</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  {t('company.about')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/locations" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  {t('company.locations')}
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  {t('company.contact')}
-                </Link>
-              </li>
-            </ul>
-          </div>
+    <footer className="border-t border-gray-200 bg-gray-50">
+      <div className="container-custom py-12 lg:py-16">
+        <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-start">
+          {/* Logo & Description */}
+          <div className="flex w-full flex-col gap-6 lg:max-w-sm">
+            <Link href="/" className="text-2xl font-bold text-gray-900">
+              {tCommon('company')}
+            </Link>
+            <p className="text-sm leading-relaxed text-gray-600">
+              {t('description')}
+            </p>
 
-          {/* Column 2: Solutions */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('solutions.title')}</h3>
-            <ul className="space-y-3">
-              {solutions.map((solution) => (
-                <li key={solution.href}>
-                  <Link href={solution.href} className="text-gray-600 hover:text-gray-900 transition-colors">
-                    {solution.label}
-                  </Link>
-                </li>
+            {/* Contact Info */}
+            <div className="space-y-3">
+              <a
+                href="tel:+420771117112"
+                className="flex items-center gap-3 text-sm text-gray-600 hover:text-primary transition-colors"
+              >
+                <Phone className="h-4 w-4 text-primary" />
+                +420 771 117 112
+              </a>
+              <a
+                href="mailto:info@mesartim.cz"
+                className="flex items-center gap-3 text-sm text-gray-600 hover:text-primary transition-colors"
+              >
+                <Mail className="h-4 w-4 text-primary" />
+                info@mesartim.cz
+              </a>
+              <div className="flex items-start gap-3 text-sm text-gray-600">
+                <MapPin className="h-4 w-4 text-primary mt-0.5" />
+                <span>{t('contacts.datacenters')}</span>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-4">
+              {socialLinks.map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-600 transition-all hover:border-primary hover:text-primary hover:shadow-sm"
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
-          {/* Column 3: Products */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('products.title')}</h3>
-            <ul className="space-y-3">
-              {products.map((product) => (
-                <li key={product.href}>
-                  <Link href={product.href} className="text-gray-600 hover:text-gray-900 transition-colors">
-                    {product.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4: Contacts */}
-          <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">{t('contacts.title')}</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <a href="tel:+420771117112" className="text-gray-600 hover:text-gray-900 transition-colors">
-                    +420 771 117 112
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <div className="space-y-1">
-                  <a href="mailto:info@mesartim.cz" className="block text-gray-600 hover:text-gray-900 transition-colors">
-                    info@mesartim.cz
-                  </a>
-                  <a href="mailto:support@mesartim.cz" className="block text-gray-600 hover:text-gray-900 transition-colors">
-                    support@mesartim.cz
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <div className="text-sm text-gray-600">
-                  <div className="font-medium text-gray-900">{t('contacts.office')}</div>
-                  <div className="text-xs mt-1">{t('contacts.datacenters')}</div>
-                </div>
-              </li>
-            </ul>
+          {/* Links Sections */}
+          <div className="grid w-full gap-8 sm:grid-cols-3 lg:max-w-xl lg:gap-12">
+            {sections.map((section, idx) => (
+              <div key={idx}>
+                <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-900">
+                  {section.title}
+                </h3>
+                <ul className="space-y-3">
+                  {section.links.map((link, linkIdx) => (
+                    <li key={linkIdx}>
+                      <Link
+                        href={link.href}
+                        className="text-sm text-gray-600 transition-colors hover:text-primary"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-          <p className="text-sm text-gray-600">
-            {t('copyright', { year: currentYear })}
-          </p>
+        {/* Bottom Bar */}
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 text-xs text-gray-500 md:flex-row">
+          <p>{t('copyright', { year: currentYear })}</p>
+          <div className="flex gap-6">
+            <Link href="/privacy" className="hover:text-primary transition-colors">
+              {t('legal.privacy')}
+            </Link>
+            <Link href="/terms" className="hover:text-primary transition-colors">
+              {t('legal.terms')}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

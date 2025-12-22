@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { Inter } from "next/font/google";
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+
+const inter = Inter({ subsets: ["latin"] });
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { locales } from '@/i18n';
+import { routing } from '@/lib/routing';
 import "../globals.css";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { OrganizationStructuredData } from "@/components/seo/StructuredData";
+import { MinimalHeader } from "@/components/layout/MinimalHeader";
+import { Dock } from "@/components/layout/Dock";
+import { BottomTabBar } from "@/components/layout/BottomTabBar";
+import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
@@ -25,6 +29,11 @@ export const metadata: Metadata = {
   },
 };
 
+// Generate static params for all locales
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function LocaleLayout({
   children,
   params,
@@ -35,21 +44,26 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) {
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  // Enable static rendering
+  setRequestLocale(locale);
 
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={GeistSans.variable}>
+    <html lang={locale} className={inter.className}>
       <body className="min-h-screen flex flex-col bg-white font-sans">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <OrganizationStructuredData />
-          <Navbar />
+          <MinimalHeader />
+          <Dock />
           <main className="flex-1">{children}</main>
           <Footer />
+          <BottomTabBar />
           <WhatsAppButton />
         </NextIntlClientProvider>
       </body>

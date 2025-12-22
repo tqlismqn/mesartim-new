@@ -15,26 +15,61 @@
     "whatsapp": "WhatsApp"
   },
   "navigation": {
+    "home": "Strona główna",
     "accountingServer": "Accounting Server",
+    "accountingServerDesc": "Zdalne serwery dla Pohoda",
     "cloudBackup": "Cloud Backup",
+    "cloudBackupDesc": "Automatyczne szyfrowane kopie zapasowe",
     "itSupport": "Wsparcie IT",
+    "itSupportDesc": "Monitoring i wsparcie 24/7",
     "projects": "Projekty",
+    "projectsDesc": "Niestandardowe rozwiązania IT dla Twojej firmy",
     "customProjects": "Projekty niestandardowe",
     "contact": "Kontakt",
     "aboutUs": "O nas",
+    "about": "O nas",
     "privacyPolicy": "Polityka prywatności",
     "termsOfService": "Warunki usługi",
     "services": "Usługi",
+    "solutions": "Rozwiązania",
+    "products": "Produkty",
     "techSupport": "Wsparcie techniczne",
+    "techSupportDesc": "Profesjonalna pomoc, gdy jej potrzebujesz",
     "cloudSolutions": "Rozwiązania chmurowe",
+    "cloudSolutionsDesc": "Korporacyjna infrastruktura chmurowa",
     "security": "Bezpieczeństwo",
-    "consulting": "Doradztwo"
+    "securityDesc": "Chroń swoje dane i systemy",
+    "consulting": "Doradztwo",
+    "consultingDesc": "Strategia IT i optymalizacja"
   },
   "homepage": {
     "hero": {
-      "headline": "Niezawodna infrastruktura IT.",
-      "headlineAccent": "Uproszczona.",
-      "subheadline": "Rozwiązania serwerowe na poziomie korporacyjnym, bezpieczne kopie zapasowe i wsparcie ekspertów. Zaprojektowane z myślą o rozwoju Twojej firmy."
+      "badge": "Korporacyjne rozwiązania IT",
+      "headline": "Przekształć swoją",
+      "headlineAccent": "infrastrukturę cyfrową",
+      "subheadline": "Wzmocnij swój biznes nowoczesnymi rozwiązaniami chmurowymi, solidnym zabezpieczeniem i całodobowym wsparciem ekspertów. Dostarczamy usługi IT na poziomie korporacyjnym dostosowane do Twoich potrzeb.",
+      "features": {
+        "cloud": "Rozwiązania chmurowe",
+        "cloudDesc": "Skalowalna infrastruktura",
+        "security": "Bezpieczeństwo przede wszystkim",
+        "securityDesc": "Ochrona na poziomie korporacyjnym",
+        "data": "Zarządzanie danymi",
+        "dataDesc": "Inteligentne przetwarzanie danych",
+        "network": "Optymalizacja sieci",
+        "networkDesc": "Szybkie połączenie",
+        "server": "Zarządzanie serwerami",
+        "serverDesc": "Monitoring 24/7",
+        "performance": "Wydajność",
+        "performanceDesc": "Błyskawiczna reakcja"
+      },
+      "stats": {
+        "uptime": "99.9%",
+        "uptimeLabel": "SLA dostępności",
+        "support": "24/7",
+        "supportLabel": "Wsparcie",
+        "clients": "500+",
+        "clientsLabel": "Klientów"
+      }
     },
     "servicesSection": {
       "title": "Wszystko, czego potrzebujesz.",
@@ -59,7 +94,12 @@
     "cta": {
       "title": "Gotowy na upgrade?",
       "subtitle": "Dołącz do setek zadowolonych firm korzystających z naszej infrastruktury.",
-      "button": "Skontaktuj się z działem sprzedaży"
+      "button": "Skontaktuj się z działem sprzedaży",
+      "benefits": {
+        "freeConsultation": "Bezpłatna konsultacja",
+        "quickResponse": "Odpowiedź w ciągu 24 godzin",
+        "customSolution": "Rozwiązanie na miarę"
+      }
     },
     "problems": {
       "title": "We Solve Your IT Challenges",
@@ -377,6 +417,10 @@
       "title": "Kontakty",
       "office": "Biuro w Czechach",
       "datacenters": "Centra danych: Niemcy, Finlandia, CZ"
+    },
+    "legal": {
+      "privacy": "Polityka prywatności",
+      "terms": "Warunki usługi"
     }
   },
   "errors": {
